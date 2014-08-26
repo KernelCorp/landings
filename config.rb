@@ -6,10 +6,15 @@
 # compass_config do |config|
 #   config.output_style = :compact
 # end
-
+# Set template languages
+set :slim, :layout_engine => :slim
+set :slim, { :pretty => true, :format => :html5 }
 ###
 # Page options, layouts, aliases and proxies
 ###
+with_layout :sobr do
+  page 'sobr.html'
+end
 
 # Per-page layout changes:
 #
