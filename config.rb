@@ -16,6 +16,8 @@ with_layout :sobr do
   page 'sobr.html'
 end
 
+page 'remont.html', layout: :remont
+
 # Per-page layout changes:
 #
 # With no layout
