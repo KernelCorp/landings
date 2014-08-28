@@ -43,3 +43,52 @@
       #call-master-form
         .text
           | Вызовите мастера для расчета сметы <br>и <span> получите бесплатную консультацию </span>
+        form
+          #form-left.inl-bl
+            input name='name' type='text' placeholder='Представьтесь'
+            input name='phone' type='text' placeholder='Номер телефона'
+          #form-right.inl-bl
+            | Мы перезвоним вам <br> в течение 26 секунд
+            button type='submit'
+              | Получить
+
+
+
+
+#repair-type-block.fullwidth
+  #bg-stripe
+  #repair-type.container
+    .title
+      | Какой ремонт вам нужен?
+    #rtypes
+      .rtype.inl-bl.active
+        .title
+          | Косметический ремонт
+        .text
+          | Обдирка стен, <br>
+            Наклейка или покраска обоев, <br>
+            Укладка напольного покрытия
+      .rtype.inl-bl.inactive
+        .title
+          | Капитальный ремонт
+        .text
+          | Перепланировка <br>
+            Выравнивание стен, установка дверей, окон, укладка напольного покрытия и замена коммуникаций
+      .rtype.inl-bl.inactive
+        .title
+          | «Евроремонт»
+        .text
+          | Обдирка и выравнива- ние стен, потолков, наклейка обоев или покраска, укладка напольного покрытия
+      .rtype.inl-bl.inactive
+        .title
+          | Дизайн проект
+        .text
+          | Разработка проекта <br> и трехмерная визуализация будущего интерьера
+
+    #square
+      .title
+        | Какую площадь будем ремонтировать? (примерно)
+
+
+
+

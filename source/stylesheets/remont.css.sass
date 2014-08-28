@@ -1,17 +1,24 @@
 body
   margin: 0
   background: #ffffff
+  line-height: 1
 
 .page
   font-family: 'PT Sans'
 
 .fullwidth
+  position: relative
   width: 100%
 
 .container
   position: relative
   width: 1050px
   margin: 0 auto
+.inl-bl
+  display: inline-block
+  vertical-align: top
+
+
 
 #header-block
   background: rgba(102, 85, 59, 0.84)
@@ -38,17 +45,19 @@ body
         float: right
         margin-top: 118px
         font-size: 23px
+        line-height: 1.2
         #head-tel
           color: #ffffff
           text-decoration: none
-          font-size: 30.7px
-          font-weight: bold
+          font-size: 30px
+          font-family: 'PT Sans Bold'
 
       #bold_promises
         font-size: 49.54px
-        font-weight: bold
+        font-family: 'PT Sans Bold'
         padding-top: 245px
-        padding-bottom: 42px
+        padding-bottom: 50px
+        line-height: 1.2
 
       #calc
         display: block
@@ -60,7 +69,6 @@ body
         text-decoration: none
 
 #description
-  height: 528px
   font-size: 0px
   .empty
     height: 44px
@@ -68,7 +76,7 @@ body
     display: inline-block
     vertical-align: top
     width: 262px
-    margin-bottom: 20px
+    margin-bottom: 25px
     font-size: 24px
     line-height: 1.2
     .img-block
@@ -96,14 +104,95 @@ body
       box-sizing: border-box
       border: 1px solid rgba(255, 255, 255, 0.25)
       outline: 1px solid #ffffff
+      line-height: 1.2
 
       .text
         margin-left: 43px
         margin-top: 30px
         font-size: 24px
-        font-weight: bold
+        font-family: 'PT Sans Bold'
         span
           text-decoration: underline
+      form
+        font-size: 0
+        margin-left: 43px
+        margin-top: 23px
+        input
+          display: block
+          width: 264px
+          height: 58px
+          margin-bottom: 11px
+          font-size: 24px
+          padding-left: 7px
+        #form-right
+          width: 200px
+          margin-left: 19px
+          margin-top: 8px
+          font-size: 18px
+          button
+            height: 58px
+            width: 199px
+            background: #ffc467
+            background-image: url(/images/remont/button.png)
+            cursor: pointer
+            border: none
+            outline: none
+            color: #ffffff
+            font-family: 'PT Sans Bold'
+            font-size: 23px
+            text-transform: uppercase
+            letter-spacing: 3px
+            margin-top: 20px
+
+#repair-type-block
+  height: 1470px
+  background: #ffc467
+  .title
+    font-family: 'PT Sans Bold'
+    font-size: 40px
+    padding: 35px 0
+  #bg-stripe
+    position: absolute
+    height: 210px
+    width: 100%
+    top: 785px
+    background-color: rgba(255, 255, 255, 0.53)
+  #repair-type
+    #rtypes
+      font-size: 0
+      .rtype
+        width: 241px
+        height: 249px
+        margin-right: 23px
+        line-height: 1.2
+        &:last-child
+          margin-right: 0
+        .title
+          height: 75px
+          font-family: 'PT Sans Bold'
+          font-size: 24px
+          text-decoration: underline
+          padding: 30px 0 0 23px
+        .text
+          font-size: 18px
+          padding: 0 23px
+
+      .rtype.active
+        background-image: url(/images/remont/active.png)
+      .rtype.inactive
+        background-image: url(/images/remont/inactive.png)
+        cursor: pointer
+        color: #5c5c5c
+        &:hover
+          background-image: url(/images/remont/hover.png)
+
+    #square
+      .title
+        padding-top: 50px
+        padding-bottom: 30px
+
+
+
 
 
 
