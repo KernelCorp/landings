@@ -1,0 +1,33 @@
+html
+  head
+    meta charset='utf-8'
+      / REMOVE AFTER COPY
+      link rel='stylesheet' href='stylesheets/rack.css'
+      link rel='stylesheet' href='stylesheets/__PROJECT_NAME__/__PROJECT_NAME__.css'
+      script type='text/javascript' src='javascripts/__PROJECT_NAME__/all.js'
+
+  body
+    #header
+      .container
+        .menu.center
+          ul
+            li: a.active href='#' Каталог
+            li: a href='#' Каталог
+            li: a href='#' Каталог
+            li: a href='#' Каталог
+            li: a href='#' Каталог
+
+    .content
+      == yield
+    #footer
+      .container
+        .header КАТАЛОГ
+        ul.menu
+          li: a href='#' Каталог
+          li: a href='#' Каталог
+          li: a href='#' Каталог
+          li: a href='#' Каталог
+          li: a href='#' Каталог
+
+        .copyright
+          span &copy; 1970 - 2014 __PROJECT_NAME__

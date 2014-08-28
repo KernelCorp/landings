@@ -12,9 +12,13 @@ set :slim, { :pretty => true, :format => :html5 }
 ###
 # Page options, layouts, aliases and proxies
 ###
-with_layout :sobr do
-  page 'sobr.html'
-end
+# EXAMPLE
+page '/index.html', layout: :rack
+
+#PROJECTS
+page '/sobr.html', layout: :sobr
+page '/anna.html', layout: :anna
+# page 'anna.html', layout: :anna
 
 # Per-page layout changes:
 #

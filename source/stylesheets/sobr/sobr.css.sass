@@ -1,5 +1,5 @@
-@import "normalize"
-@import "jquery.bxslider"
+@import "../normalize"
+@import "../jquery.bxslider"
 
 html, body
   height: 100%
@@ -106,7 +106,7 @@ div.container
   width: 87%
 
 #footer
-  background: url(../images/sobr/footer-background.jpg)
+  background: url(../../images/sobr/footer-background.jpg)
   bottom: 0
   box-sizing: border-box
   color: white
@@ -153,10 +153,12 @@ div.container
   margin-bottom: 40px
 
 .bx-wrapper .bx-controls-direction a
-  background: url(../images/sobr/controls.png) 0 0 no-repeat
+  background: url(../../images/sobr/controls.png) 0 0 no-repeat
   height: 82px
   margin-top: -41px
   width: 64px
+  &:hover
+    border-bottom-color: transparent
 
 .bx-wrapper a.bx-prev
   background-position: 0 -66px
