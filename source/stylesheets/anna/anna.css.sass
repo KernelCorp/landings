@@ -1,0 +1,405 @@
+@import "../rack"
+@import "../../fonts/pt-sans/pt-sans"
+@import "../jquery.bxslider"
+@import "bootstrap/variables"
+@import "bootstrap/mixins"
+@import "bootstrap/navs"
+
+body
+  font-family: 'PT sans'
+  padding-bottom: 456px
+
+a
+  color: #eb4a36
+  &:hover
+    border-color: #eb4a36
+
+#header
+  background: #fcfdfd url("../../images/anna/header_background.jpg") 0 0 repeat-x
+  border-bottom: 2px solid #d6d6d6
+  height: 85px
+
+  .anna_name
+    border-bottom: 2px solid #fd6f2f
+    color: #fd6f2f
+    display: inline-block
+    font-size: 16px
+    padding: 39px 0 5px
+
+  div.search
+    padding-top: 29px
+
+    input.search
+      background-color: #fbfbfb
+      border: 1px solid #dedede
+      border-radius: 3px
+      height: 32px
+      outline: none
+      padding: 3px 10px 3px 32px
+      vertical-align: top
+      width: 178px
+    button.search
+      background-color: transparent
+      border: none
+      height: 32px
+      outline: none
+      margin-right: -32px
+      padding: 0
+      position: relative
+      vertical-align: top
+      width: 32px
+
+div.container
+  width: 1020px
+
+button.img, a.img
+  background: transparent
+  border: none
+  outline: none
+  padding: 0
+
+.promo
+  background-color: #fffff0
+
+  .left-block, .center-block, .right-block
+    display: inline-block
+    vertical-align: top
+
+  .left-block
+    width: 256px
+  .center-block
+    width: 390px
+  .right-block
+    width: 356px
+
+  img.anna_big
+    margin-left: -68px
+    margin-top: -19px
+
+  img.logo
+    margin-top: 54px
+
+  .info_block
+    margin-top: 10px
+    margin-left: 54px
+
+  .right-block
+    padding-top: 79px
+    text-align: right
+
+
+    a
+      display: inline-block
+      margin-bottom: 20px
+
+    .fen-shui
+      font-size: 13px
+      float: right
+      margin-right: 51px
+      width: 103px
+
+  .footer
+    background-color: #42454c
+    box-sizing: border-box
+    color: #dddcca
+    font-size: 18px
+    line-height: 18px
+    font-weight: bold
+    height: 79px
+    padding-top: 30px
+
+    a
+      color: #e94931
+      font-style: italic
+      &:hover
+        border-bottom-color: #e94931
+
+.group-header
+  background: url('../../images/anna/news-line.jpg') 0 5px repeat-x
+  font-size: 20px
+  font-weight: bold
+  padding-bottom: 30px
+  .text
+    background-color: #fff
+    display: inline-block
+    padding-right: 20px
+
+.news_block
+  padding-top: 70px
+  text-align: left
+
+  .block_d2
+    display: inline-block
+    vertical-align: top
+    width: 49.5%
+
+  .block
+    width: 444px
+    .elem
+      color: #8d889d
+      font-size: 13px
+      height: 302px
+      position: relative
+      .description
+        height: 92px
+        padding-top: 20px
+
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+
+  .bx-wrapper
+    margin-bottom: 0
+
+  .bx-wrapper .bx-pager
+    bottom: 0
+    box-sizing: border-box
+    padding-right: 50px
+    text-align: right
+
+
+  .bx-wrapper .bx-pager.bx-default-pager a
+    background-color: #ebecf1
+    border: none
+    border-radius: 13px
+    height: 25px
+    margin: 0 5px
+    text-align: left
+    width: 25px
+
+    &:hover, &.active
+      background-color: #fd6f2f
+
+.materials
+  padding-top: 48px
+
+  [class^='icon-']
+    background: url('../../images/anna/materials-icons.png') 0 0 no-repeat
+    display: inline-block
+    vertical-align: baseline
+    margin-right: 8px
+
+  .icon-book
+    background-position: 0 0
+    height: 12px
+    width: 12px
+
+  .icon-audio
+    background-position: -16px 0
+    height: 12px
+    width: 14px
+
+  .icon-video
+    background-position: -34px 0
+    height: 12px
+    width: 13px
+
+  .nav-tabs
+    border-bottom: none
+    > li > a
+      background-color: #fbfbfb
+      border: 1px solid #dfdfdf
+      border-radius: 0
+      color: #65686d
+      margin-right: -1px
+      padding: 12px 50px
+      &:hover
+        background-color: #fff
+
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:hover,
+  .nav-tabs > li.active > a:focus
+    background-color: #fff
+    border-top: 2px solid #fe6517
+    border-bottom-color: transparent
+
+  .tab-content
+    padding-top: 50px
+
+  .book
+    display: inline-block
+    vertical-align: top
+    width: 24.5%
+
+    div.img
+      height: 268px
+      img
+        margin-left: -20px
+
+
+.bazci
+  padding-top: 90px
+
+  p
+    color: #65686d
+    font-size: 14px
+    margin: 0 0 15px
+
+  .left-block
+    display: inline-block
+    margin-right: 10px
+    vertical-align: top
+    width: 745px
+
+  .right-block
+    display: inline-block
+    vertical-align: top
+    width: 247px
+
+    .form
+
+      .header
+        font-weight: bold
+        margin-bottom: 20px
+
+.form
+  background-color: #fefefd
+  border: 1px solid #e4e4e4
+  border-radius: 3px
+
+  padding: 26px 26px 0
+
+  .elem
+    margin-bottom: 17px
+    label
+      font-size: 14px
+
+    input, textarea
+      border: 1px solid #e4e4e4
+      height: 25px
+      outline-color: #fe6517
+      padding: 5px 5px 5px 25px
+      width: 186px
+
+    .name
+      position: relative
+      &::before
+        background: url('../../images/anna/form-icons.png') 0 0 no-repeat
+        content: ' '
+        height: 16px
+        position: absolute
+        top: 4px
+        left: 6px
+        width: 16px
+    .email
+      position: relative
+      &::before
+        background: url('../../images/anna/form-icons.png') -18px 0 no-repeat
+        content: ' '
+        height: 16px
+        position: absolute
+        top: 4px
+        left: 6px
+        width: 16px
+    .text
+      position: relative
+      &::before
+        background: url('../../images/anna/form-icons.png') -36px 0 no-repeat
+        content: ' '
+        height: 16px
+        position: absolute
+        top: 4px
+        left: 6px
+        width: 16px
+
+    .submit
+      background: -webkit-linear-gradient(top, #e85e48 0%, #e74b31 100%)
+      border: 1px solid #e3472a
+      border-radius: 3px
+      color: #ffffff
+      padding: 5px 23px 7px
+
+
+
+#footer
+  background-color: #f9f9f9
+  border-top: 1px solid #e2e2e2
+  color: #4b4c4e
+  height: 426px
+
+  .block_d4
+    box-sizing: border-box
+    display: inline-block
+    padding-right: 20px
+    vertical-align: top
+    width: 24.5%
+    &:last-child
+      padding-right: 0
+
+    .form
+      border: none
+      background: transparent
+      padding: 0
+
+      input
+        height: 32px
+        width: 230px
+
+      textarea
+        height: 109px
+        width: 230px
+
+      .name::before,
+      .email::before,
+      .text::before
+        top: 8px
+
+    .header
+      color: #222
+      font-weight: bold
+      margin-bottom: 20px
+
+    ul li
+      padding-bottom: 8px
+
+      a
+        color: #4b4c4e
+        &:hover
+          border-color: #4b4c4e
+
+    .tweet
+      font-size: 16px
+      line-height: 20px
+      padding-left: 20px
+      padding-bottom: 20px
+      position: relative
+      &:before
+        background: url('../../images/anna/form-icons.png') -53px 0 no-repeat
+        content: ' '
+        position: absolute
+        left: 0
+        top: 2px
+        height: 16px
+        width: 16px
+      .date
+        font-size: 14px
+        font-style: italic
+
+    .tags
+      .tag
+        background-color: #fffffc
+        border: 1px solid #dddddd
+        border-radius: 3px
+        display: inline-block
+        margin-right: 10px
+        margin-bottom: 10px
+        padding: 9px 15px
+        > a
+          color: #4b4c4e
+          text-decoration: none
+          &:hover
+            border-color: #4b4c4e
+  #line
+    background: url('../../images/anna/footer_background.jpg') 0 0
+    bottom: 0
+    box-sizing: border-box
+    color: #686868
+    height: 58px
+    padding-top: 18px
+    position: absolute
+    width: 100%
+    .light
+      color: #b5bcba
+    a
+      color: #686868

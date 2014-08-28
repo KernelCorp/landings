@@ -1,0 +1,92 @@
+@import "normalize"
+
+html, body
+  height: 100%
+  margin: 0
+  padding: 0
+
+body
+  box-sizing: border-box
+  height: auto
+  min-height: 100%
+  padding-bottom: 280px // for footer, overwrite in inherited file
+  position: relative
+
+div.container
+  margin: 0 auto
+  width: 87%
+
+#header
+  background-color: #ccc // for test, overwrite in inherited file
+  width: 100%
+
+  .menu
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+      li
+        display: inline-block
+        margin: 0
+        padding: 0
+
+        a, a:hover, a:visited
+          border-color: transparent
+          text-decoration: none
+        a
+          border-bottom: 1px solid transparent
+          display: inline-block
+          padding: 5px
+          margin: 0
+        a.active, a:hover
+          border-bottom-color: inherit
+    &.center
+      text-align: center
+
+
+#footer
+  background-color: #ccc // for test, overwrite in inherited file
+  bottom: 0
+  box-sizing: border-box
+  height: 250px // footer height, overwrite in inherited file
+  position: absolute
+  width: 100%
+
+  .header
+    margin: 30px 0 5px
+  ul
+    line-height: 24px
+    list-style: none
+    margin: 0
+    padding: 0
+
+  .copyright
+    box-sizing: border-box
+    padding-bottom: 10px
+    position: absolute
+    bottom: 0
+
+a
+  border-bottom: 1px solid transparent
+  text-decoration: none
+  &:hover
+    border-bottom-color: #0000ff
+
+
+// --------------- HELPERS ---------------
+
+.text-center
+  text-align: center
+
+.block-center
+  display: block
+  margin: auto
+
+.pull-left
+  float: left
+
+.pull-right
+  float: right
+
+// --------------- END HELPERS ---------------
+

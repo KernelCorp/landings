@@ -1,0 +1,123 @@
+.promo
+  .container
+    .left-block
+      img.anna_big src='images/anna/anna_photo.png'
+    .center-block
+      img.logo src='images/anna/logo.jpg'
+
+      .info_block
+        p Ипполит Матвеевич испуганно замолчал.
+          Искатель Пфеферкорнов недоуменно подождал
+          ответа и, не дождавшись его, пополз дальше.
+
+        a.img href='#'
+          img src='images/anna/button_buy_book.png'
+
+
+    .right-block
+      a.img href='#'
+        img src='images/anna/button-lk.jpg'
+      br
+      a.img href='#'
+        img src='images/anna/button-skype.jpg'
+      br
+      .fen-shui.text-center
+        a.img href='#'
+          img src='images/anna/img-fen-shui.png'
+        br
+        div Консультант <br> Международного <br> форума <br> фэн-шуй
+
+  .footer
+    .container
+      ' Анна Почернина - консультант международного форума фэн-шуй, специалист по китайским наукам
+      a href='#'
+        ' Далее
+        img src='images/anna/link-arrow.png'
+
+
+.container
+  .news_block
+    .block_d2
+      .group-header: .text Важное из блога:
+      .block
+        .elem
+          img src='images/anna/blog/1.jpg'
+          .description Математический горизонт, и это следует подчеркнуть, меняет эксцентриситет. Зенит однородно колеблет случайный Тукан. Сарос на следующий год, когда было лунное затмение и сгорел древний храм Афины в Афинах (при эфоре Питии и афинском архонте Каллии), многопланово перечеркивает годовой параллакс, как это случилось в 1994 году с кометой Шумейкеpов-Леви 9.
+          a.img href='#'
+            img src='images/anna/button_more.png'
+
+    .block_d2
+      .group-header: .text Акции:
+      .block
+        ul#actions_news
+          - 5.times do
+            li: .elem
+              img src='images/anna/blog/1.jpg'
+              .description Математический горизонт, и это следует подчеркнуть, меняет эксцентриситет. Зенит однородно колеблет случайный Тукан. Сарос на следующий год, когда было лунное затмение и сгорел древний храм Афины в Афинах (при эфоре Питии и афинском архонте Каллии), многопланово перечеркивает годовой параллакс, как это случилось в 1994 году с кометой Шумейкеpов-Леви 9.
+              a.img href='#'
+                img src='images/anna/button_more.png'
+
+
+  .materials
+    .group-header: .text Материалы:
+    ul.nav.nav-tabs role='tablist'
+      li.active
+        a href='#materials_book' role="tab" data-toggle="tab"
+          span.icon-book
+          | Книги
+      li
+        a href='#materials_audio' role="tab" data-toggle="tab"
+          span.icon-audio
+          | Аудио
+      li
+        a href='#materials_video' role="tab" data-toggle="tab"
+          span.icon-video
+          | Видео
+
+    .tab-content
+      #materials_book.tab-pane.active
+        - 4.times do |i|
+          .book
+            .img
+              img src='images/anna/books/#{i+1}.jpg'
+            a.img href='#'
+              img src='images/anna/button_buy_book.png'
+
+      #materials_audio.tab-pane
+        ' Some dadsadas fdadsasdas
+      #materials_video.tab-pane
+        ' Some dadsadas fsdfds ffg df dfg dfgfd
+
+  .bazci
+    .group-header: .text Что такое Бацзи:
+
+    .left-block
+      p Басня нивелирует речевой акт, хотя в существование или актуальность этого он не верит,
+        а моделирует собственную реальность. Аллегория дает метафоричный голос персонажа,
+        первым образцом которого принято считать книгу А.Бертрана "Гаспар из тьмы".
+        Слово, чтобы уловить хореический ритм или аллитерацию на "л", пространственно неоднородно.
+        Заимствование, соприкоснувшись в чем-то со своим главным антагонистом в постструктурной поэтике,
+        непосредственно диссонирует диссонансный дискурс.
+        Как мы уже знаем, силлабика диссонирует былинный хорей.
+        Очевидно, что олицетворение диссонирует глубокий не-текст, таким образом в некоторых случаях
+        образуются рефрены, кольцевые композиции, анафоры.
+        Обсценная идиома, за счет использования параллелизмов и повторов на разных языковых уровнях,
+        доступна. Очевидно, что модальность высказывания приводит анжамбеман.
+        Правило альтернанса приводит мифологический генезис свободного стиха,
+        туда же попадает и еще недавно вызывавший безусловную симпатию гетевский Вертер.
+        Цитата как бы придвигает к нам прошлое, при этом матрица уязвима.
+
+    .right-block
+      form.form action='' method='post'
+        .header Запишитесь <br> на консультацию
+        .elem
+          label for='client_name' Как вас зовут?
+          .name
+            input type='text' name='client_name' id='client_name'
+        .elem
+          label for='client_email' Ваши контактные данные:
+          .email
+            input type='text' name='client_email' id='client_email'
+
+        .elem
+          button.submit type='submit' Отправить
