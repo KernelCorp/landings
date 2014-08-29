@@ -20,6 +20,8 @@ set :slim, { :pretty => true, :format => :html5 }
 page '/anna.html', layout: :anna
 # page 'anna.html', layout: :anna
 
+page 'remont.html', layout: :remont
+
 # Per-page layout changes:
 #
 # With no layout

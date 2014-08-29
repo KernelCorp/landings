@@ -1,0 +1,477 @@
+@import "jquery.bxslider"
+@import "jquery-ui"
+@import "../fonts"
+
+body
+  margin: 0
+  background: #ffffff
+  line-height: 1
+  p
+    margin: 0
+  ul
+    padding: 0
+    margin: 0
+  button
+    background: transparent
+    cursor: pointer
+    border: none
+    outline: none
+    color: #ffffff
+    font-family: 'PT Sans Bold'
+    text-transform: uppercase
+    letter-spacing: 3px
+    padding: 0
+
+.page
+  font-family: 'PT Sans'
+
+.fullwidth
+  position: relative
+  width: 100%
+
+.container
+  position: relative
+  width: 1050px
+  margin: 0 auto
+.inl-bl
+  display: inline-block
+  vertical-align: top
+
+.title
+  font-family: 'PT Sans Bold'
+  font-size: 40px
+  padding: 35px 0
+
+.sup
+  font-size: 60%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+  top: -0.5em
+
+
+#header-block
+  background: rgba(102, 85, 59, 0.84)
+  #header-background
+    width: 1345px
+    margin: 0 auto
+    background-image: url(../../images/remont/header_photo.jpg)
+    height: 539px
+    color: #ffffff
+
+    #header
+      #logo-block
+        position: absolute
+        height: 186px
+        width: 132px
+        left: -15px
+        top: 0
+        background: #ffffff
+        img
+          margin-left: 11px
+          margin-top: 62px
+
+      #contacts
+        float: right
+        margin-top: 118px
+        font-size: 23px
+        line-height: 1.2
+        #head-tel
+          color: #ffffff
+          text-decoration: none
+          font-size: 30px
+          font-family: 'PT Sans Bold'
+
+      #bold_promises
+        font-size: 49.54px
+        font-family: 'PT Sans Bold'
+        padding-top: 245px
+        padding-bottom: 50px
+        line-height: 1.2
+
+      #calc
+        display: block
+        width: 244px
+        border-bottom: 1px solid #ffffff
+        cursor: pointer
+        color: #ffffff
+        font-size: 26px
+        text-decoration: none
+
+#description
+  font-size: 0px
+  .empty
+    height: 44px
+  .item
+    display: inline-block
+    vertical-align: top
+    width: 262px
+    margin-bottom: 25px
+    font-size: 24px
+    line-height: 1.2
+    .img-block
+      position: relative
+      height: 82px
+      margin-bottom: 25px
+      img
+        position: absolute
+        bottom: 0
+
+  #call-master-form-block
+    position: absolute
+    height: 295px
+    width: 563px
+    right: -20px
+    top: -47px
+    background-color: #ffc467
+    -webkit-box-shadow: 0px 5px 30px 0px rgba(50, 50, 50, 0.25)
+    -moz-box-shadow:    0px 5px 30px 0px rgba(50, 50, 50, 0.25)
+    box-shadow:         0px 5px 30px 0px rgba(50, 50, 50, 0.25)
+    #call-master-form
+      margin: 10px
+      height: 275px
+      width: 543px
+      box-sizing: border-box
+      border: 1px solid rgba(255, 255, 255, 0.25)
+      outline: 1px solid #ffffff
+      line-height: 1.2
+
+      .text
+        margin-left: 43px
+        margin-top: 30px
+        font-size: 24px
+        font-family: 'PT Sans Bold'
+        span
+          text-decoration: underline
+      form
+        font-size: 0
+        margin-left: 43px
+        margin-top: 23px
+        input
+          display: block
+          width: 264px
+          height: 58px
+          margin-bottom: 11px
+          font-size: 24px
+          padding-left: 7px
+        #form-right
+          width: 200px
+          margin-left: 19px
+          margin-top: 8px
+          font-size: 18px
+          button
+            height: 58px
+            width: 199px
+            background-image: url(../../images/remont/button.png)
+            font-size: 23px
+            margin-top: 20px
+
+#repair-type-block
+  height: 787px
+  background: #ffc467
+  #repair-type
+    #rtypes
+      font-size: 0
+      .rtype
+        width: 241px
+        height: 249px
+        margin-right: 23px
+        line-height: 1.2
+        &:last-child
+          margin-right: 0
+        .title
+          height: 75px
+          font-family: 'PT Sans Bold'
+          font-size: 24px
+          text-decoration: underline
+          padding: 30px 0 0 23px
+        .text
+          font-size: 18px
+          padding: 0 23px
+
+      .rtype.active
+        background-image: url(../../images/remont/active.png)
+      .rtype.inactive
+        background-image: url(../../images/remont/inactive.png)
+        cursor: pointer
+        color: #5c5c5c
+        &:hover
+          background-image: url(../../images/remont/hover.png)
+
+    #square
+      .title
+        padding-top: 50px
+        padding-bottom: 30px
+      #small-room
+        font-size: 18px
+        margin-left: 300px
+        margin-bottom: 5px
+      #scale
+        font-size: 0
+        text-align: center
+        width: 1080px
+        margin-left: -15px
+        margin-bottom: 15px
+        .tic
+          font-size: 16px
+          margin: auto
+          margin-right: 62px
+          &:last-child
+            margin-right: 0
+
+    #price-block
+      position: relative
+      width: 100%
+      margin-top: 52px
+      text-align: center
+      #under-border
+        width: 1024px
+        height: 85px
+        top: 15px
+        border: 1px solid #000000
+        left: 0
+        right: 0
+        margin: auto
+        margin-bottom: -102px
+      #will-cost, #price, #average-price
+        display: inline-block
+        background: #ffc467
+        padding: 0 20px
+      #will-cost
+        font-size: 24px
+      #price
+        font-family: 'PT Sans Bold'
+        font-size: 85px
+        margin: 10px 0 15px 0
+      #average-price
+        font-size: 24px
+        span
+          background-color: #ff0000
+          color: #ffffff
+
+
+#form-block
+  background: #ffc467
+  height: 210px
+  #bg-opacity
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgba(255, 255, 255, 0.53)
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.47)
+    -moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.47)
+    box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.47)
+    z-index: 2
+.form
+  font-family: 'PT Sans Bold'
+  font-size: 0
+  text-align: center
+  z-index: 3
+  p
+    display: inline-block
+    font-size: 40px
+    line-height: 1.2
+    padding-top: 25px
+    padding-bottom: 17px
+  input
+    display: inline-block
+    height: 58px
+    font-size: 25px
+    margin-right: 15px
+    padding-left: 8px
+    &:first-child
+      width: 357px
+    &:nth-child(2)
+      width: 320px
+  button
+    height: 58px
+    width: 337px
+    background-image: url(../../images/remont/button_2.png)
+    font-size: 22px
+
+#economy-block
+  height: 470px
+  background: #ffc467
+  #economy
+    font-size: 0
+    .title
+      padding-top: 50px
+      padding-bottom: 30px
+    .item
+      display: inline-block
+      width: 357px
+      line-height: 1.2
+      .inner-title
+        height: 75px
+        width: 100%
+        font-family: 'PT Sans Bold'
+        font-size: 24px
+      .text
+        font-size: 18px
+    #item-3
+      width: 335px
+
+    #under-line
+      width: 100%
+      border-top: 1px solid #000000
+      margin-bottom: -40px
+      margin-top: 105px
+    #low-price-container
+      text-align: center
+      line-height: 1.2
+      #low-price
+        display: inline-block
+        background: #ffc467
+        font-size: 32px
+        padding: 0 20px
+        span
+          font-family: 'PT Sans Bold'
+        a
+          color: #0097f6
+
+#slider-block
+  height: 748px
+  #want-this
+    width: 1345px
+    #want-this-slider
+      height: 100%
+      width: 100%
+  #slider-stripe
+    position: absolute
+    height: 100%
+    width: 367px
+    left: 100px
+    top: 0px
+    background-color: rgba(0, 0, 0, 0.33)
+    #feedback-container
+      position: relative
+      height: 100%
+      width: 265px
+      margin: 0 auto
+      color: #ffffff
+      line-height: 1.2
+      font-size: 24px
+      #photo-info
+        height: 100px
+      #author
+        font-family: 'PT Sans Bold'
+        text-align: right
+        margin-top: 23px
+      button
+        position: absolute
+        left: -1px
+        bottom: 23px
+        height: 59px
+        width: 267px
+        background-image: url(../../images/remont/button_3.png)
+        font-size: 22px
+
+#who-to-come-block
+  #who-to-come
+    line-height: 1.2
+    .title
+      line-height: 1
+      padding-bottom: 30px
+    .text
+      font-size: 24px
+    #experts
+      margin-top: 25px
+      margin-bottom: 70px
+      font-size: 0
+      .expert
+        display: inline-block
+        width: 264px
+        margin-right: 94px
+        &:last-child
+          margin-right: 0
+        .exp-photo
+          height: 264px
+          width: 264px
+          background: #d7d7d7
+        .inner-title
+          font-family: 'PT Sans Bold'
+          font-size: 24px
+          margin-top: 22px
+          height: 100px
+          span
+            font-size: 18px
+            color: #7fae00
+        .text
+          height: 150px
+          font-size: 18px
+        button
+          height: 58px
+          width: 180px
+          background-image: url(../../images/remont/button_4.png)
+          font-size: 22px
+
+#footer-block
+  height: 460px
+  background-color: #fff9e6
+  z-index: 5
+  #footer
+    line-height: 1.2
+    .title
+      font-family: 'PT Sans Bold'
+      font-size: 48px
+      padding-top: 45px
+      padding-bottom: 25px
+      span
+        color: #35aae6
+    a
+      color: #35aae6
+    .text
+      font-size: 21px
+      margin-bottom: 25px
+    #contacts
+      width: 715px
+      font-size: 18px
+      color: #464545
+      border-top: 1px solid #999999
+      margin-top: 20px
+      line-height: 3.5
+    #champ-pic
+      z-index: -1
+      position: absolute
+      height: 477px
+      width: 376px
+      right: 0
+      top: -17px
+      background-image: url(../../images/remont/champange.jpg)
+      #champ-text
+        float: right
+        font-size: 17px
+        color: #6a6a6a
+        width: 260px
+        margin-top: 30px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
