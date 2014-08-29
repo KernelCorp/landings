@@ -15,9 +15,3 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 gem 'slim'
 gem 'sass'
-
-gem 'slim-rails'
-gem 'sass-rails'
-gem 'coffee-rails'
-gem 'jquery-rails'
-gem 'select2-rails'
