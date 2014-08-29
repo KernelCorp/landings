@@ -102,20 +102,12 @@
 
 .bx-wrapper .bx-prev {
 	left: 100px;
-	background: url(../images/sobr/controls.png) no-repeat 0 -32px;
+	background: url(/images/remont/left_arrow.png)
 }
 
 .bx-wrapper .bx-next {
-	right: 10px;
-	background: url(../images/sobr/controls.png) no-repeat -43px -32px;
-}
-
-.bx-wrapper .bx-prev:hover {
-	background-position: 0 0;
-}
-
-.bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
+	left: 423px;
+	background: url(/images/remont/right_arrow.png)
 }
 
 .bx-wrapper .bx-controls-direction a {
