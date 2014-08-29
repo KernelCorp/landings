@@ -667,7 +667,7 @@ button.ui-button::-moz-focus-inner {
     -ms-touch-action: none;
     touch-action: none;
     background: none !important;
-    background-image: url(/images/remont/slider.png) !important;
+    background-image: url(../../images/remont/slider.png) !important;
     border: none !important;
     outline: none !important;
 }
@@ -1224,7 +1224,7 @@ body .ui-tooltip {
 }
 
 .ui-widget-content {
-    background-image: url(/images/remont/scale.png);
+    background-image: url(../../images/remont/scale.png);
     width: 1049px;
     height: 21px;
 }
