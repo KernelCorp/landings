@@ -21,3 +21,6 @@ gem 'sass-rails'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'select2-rails'
+
+gem 'bootstrap-sass' # used in anna
+
