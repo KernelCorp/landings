@@ -1,0 +1,351 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %title Бытовые модули (бытовки) ЭкоБокс в наличии на складе в 4х регионах страны
+    %link{:href => "stylesheets/avista/style.css", :rel => "stylesheet", :type => "text/css"}
+      %link{:href => "http://fonts.googleapis.com/css?family=Roboto:400,700,300italic,500&subset=latin,cyrillic-ext,cyrillic", :rel => "stylesheet", :type => "text/css"}
+        %link{:href => "stylesheets/avista/selectbox.css", :rel => "stylesheet"}/
+        %script{:src => "http://code.jquery.com/jquery-1.11.1.min.js", :type => "text/javascript"}
+        %script{:src => "javascript/avista/common.js", :type => "text/javascript"}
+        %script{:src => "javascript/avista/jquery.maskedinput.js", :type => "text/javascript"}
+        %script{:src => "javascript/avista/source/jquery.fancybox.js?v=2.1.5", :type => "text/javascript"}
+        %link{:href => "javascript/avista/source/jquery.fancybox.css?v=2.1.5", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+        %script{:src => "javascript/avista/jquery.selectbox.min.js"}
+  %body
+    #wrapper
+      #header
+        .m-w
+          .logo.f-l
+            %img{:alt => "", :src => "img/logo.png"}/
+          / <div class="contacts-h f-r">
+          / <span class="phone"><?=$phone?></span>
+          / <div class="city-list">
+          / <select id="city-list">
+          / <?foreach($cities as $city=>$phone){?>
+          / <?if($city_geo==$city){?>
+          / <option value="<?=$phone?>" selected><?=$city?></option>
+          / <?}else{?>
+          / <option value="<?=$phone?>"><?=$city?></option>
+          / <?}?>
+          / <?}?>
+          / </select>
+          / </div>
+          / </div>
+          .clr
+          #form-block
+            .ideal.f-l
+              .top
+              .deplo
+            .form.f-r
+              .on-opac
+                .text Узнать о наличии заполнив форму:
+                %form.form-order{:action => "", :method => "post"}
+                  .row
+                    %input{:name => "phone", :placeholder => "Ваш телефон", :type => "text"}
+                  .row
+                    %input{:name => "email", :placeholder => "E-mail", :type => "text"}
+                  .row
+                    %input.order-form{:onclick => "yaCounter25541372.reachGoal('up-bottom'); return true;", :type => "submit", :value => "заказать"}
+              .opac
+          .clr
+          .menu-u-h
+            %ul
+              %li
+                %i
+                %span Универсальное использование
+              %li
+                %i.second
+                %span Утепленные
+              %li
+                %i.third
+                %span Легко разбираются и транспортируются
+      #about
+        .m-w
+          %h1 Что такое экобокс?
+          .pic
+            .first.text
+              Возможность быстрой
+              %br/
+              и легкой замены панелей
+            .second.text 5-камерное ПВХ окно
+            .third.text
+              Утепленные стены
+              %br>/
+              из заводских сэндвич-панелей
+            .fourth.text Фальцевая кровля - герметичная как “консервная банка”
+            .fifth.text
+              Прочная рама - возможность
+              %br>/
+              установки в 2 этажа
+            .sixth.text
+              Экологичная
+              %br>/
+              внутренняя отделка
+            .seventh.text 5 вариантов рассцветки
+            .guarant
+            .twice
+          .clr
+          .description
+            %ul
+              %li
+                %b Размер
+                %br/
+                Собранный:
+                %b 6,23 х 2,43 x 2,7 м
+                %br/
+                Внутренняя высота
+                %b 2,2 м
+                %br/
+                Высота в транспаке
+                %b 0,86 м
+                %br/
+                %br/
+                %b
+                  %span.size_trigger{:style => "cursor: pointer; border-bottom: 1px dashed;"} + 4 других типоразмера
+                .size_content
+                  %h2{:style => "text-align: center; margin-bottom: 10px;"} Точные размеры
+                  %table
+                    %tr
+                      %td
+                        4-метровый экобокс
+                      %td
+                        собранный 3,88 х 2,44 х 2,63 м,
+                        = succeed "\u{432}\u{43d}\u{443}\u{442}\u{440}\u{435}\u{43d}\u{43d}\u{44f}\u{44f}" do
+                          %br/
+                        высота 2,2 м,
+                        = succeed "\u{432}\u{44b}\u{441}\u{43e}\u{442}\u{430}" do
+                          %br/
+                        в транспаке 0,86 м
+                    %tr
+                      %td
+                        5-метровый экобокс
+                      %td
+                        собранный 5,06 х 2,44 х 2,63 м,
+                        = succeed "\u{432}\u{43d}\u{443}\u{442}\u{440}\u{435}\u{43d}\u{43d}\u{44f}\u{44f}" do
+                          %br/
+                        высота 2,2 м,
+                        = succeed "\u{432}\u{44b}\u{441}\u{43e}\u{442}\u{430}" do
+                          %br/
+                        в транспаке 0,86 м
+                    %tr
+                      %td{:style => "width: 160px;"}
+                        6-метровый экобокс
+                      %td
+                        собранный 6,25 х 2,44 х 2,63 м,
+                        = succeed "\u{432}\u{43d}\u{443}\u{442}\u{440}\u{435}\u{43d}\u{43d}\u{44f}\u{44f}" do
+                          %br/
+                        высота 2,2 м,
+                        = succeed "\u{432}\u{44b}\u{441}\u{43e}\u{442}\u{430}" do
+                          %br/
+                        в транспаке 0,86 м
+                    %tr
+                      %td
+                        7-метровый экобокс
+                      %td
+                        собранный 7,43 х 2,44 х 2,63 м,
+                        = succeed "\u{432}\u{43d}\u{443}\u{442}\u{440}\u{435}\u{43d}\u{43d}\u{44f}\u{44f}" do
+                          %br/
+                        высота 2,2 м,
+                        = succeed "\u{432}\u{44b}\u{441}\u{43e}\u{442}\u{430}" do
+                          %br/
+                        в транспаке 0,86 м
+                      %tr
+                        %td
+                          8-метровый экобокс
+                        %td
+                          собранный 8 х 2,44 х 2,63 м,
+                          = succeed "\u{432}\u{43d}\u{443}\u{442}\u{440}\u{435}\u{43d}\u{43d}\u{44f}\u{44f}" do
+                            %br/
+                          высота 2,2 м,
+                          = succeed "\u{432}\u{44b}\u{441}\u{43e}\u{442}\u{430}" do
+                            %br/
+                          в транспаке 0,86 м
+              %li ЭкоБоксы - это не просто строительные вагончики, а готовые решения для организации рабочих и бытовых условий, позволяют мгновенно организовать жизненные и рабочие условия на любом объекте.
+              %li Их успешно используют нефте- и газосервисные, а также добывающие компании в самых северных уголках России. Такие модули обладают серьезными преимуществами перед российскими и западными бытовыми вагончиками.
+          .clr
+      #benefits
+        .m-w
+          %h2 Основные преимущества
+          .col.f-l
+            %ul
+              %li
+                .img.f-l
+                  %img{:alt => "", :src => "img/benefits01.jpg"}/
+                .description
+                  %h3 Уникальная конструкция
+                  %p Кровля и стены не имеют ни одного самореза, что исключает протекания и брак. Несущий каркас позволяет монтировать дополнительно 2ой этаж модулей.
+                .clr
+              %li
+                .img.f-l
+                  %img{:alt => "", :src => "img/benefits02.jpg"}/
+                .description
+                  %h3 Конструктор для взрослых
+                  %p Вы легко можете увеличить пространство за счет стыковки модулей между собой и исключения части панелей. Все панели универсальны и применимы в любом месте конструкции.
+                .clr
+              %li
+                .img.f-l
+                  %img{:alt => "", :src => "img/benefits03.jpg"}/
+                .description
+                  %h3 Минимальные сроки производства
+                  %p За счет конвеерного производства и наличия готовых полуфабрикатов сроки производства сокращаются до 5 дней.
+                .clr
+          .col.f-r
+            %ul
+              %li
+                .img.f-l
+                  %img{:alt => "", :src => "img/benefits1.jpg"}/
+                .description
+                  %h3 Безопасны для работников
+                  %p Во внутренней отделке ЭкоБоксов используются материалы которые не выделяют токсичных веществ при нагревании на солнце.
+                  %br
+                .clr
+              %li
+                .img.f-l
+                  %img{:alt => "", :src => "img/benefits3.jpg"}/
+                .description
+                  %h3 Экономия на доставке
+                  %p ЭкоБокс может транспортироваться в разобранном виде, тем самым вы экономите на доставке в 3 раза. В 1 еврофуру помещается 6 ед.
+                  %br
+                    %br
+                .clr
+              %li
+                .img.f-l
+                  %img{:alt => "", :src => "img/benefits5.jpg"}/
+                .description
+                  %h3 Быстрый монтаж
+                  %p Время сборки из транспортной упаковки в готовый модуль занимает менее 3 часов. Перегородки монтируются в течении 30 мин.
+                .clr
+        .clr
+      #gallery
+        .m-w
+          %h2 разные Комплектации для разных задач
+          .price
+            .title-old-price
+              %span.title Базовый модуль
+              %del.old-price 160 000 р.
+            .sale-price 129 000 р.
+            %a.order{:href => "#callback", :onclick => "yaCounter25541372.reachGoal('midle-bottom'); return true;"} Заказать
+            %i.nal
+          .main{:alt => "img/ecos0_min.png", :style => "background-image:url(img/ecos0.png);"}
+          .clr
+          .min
+            %ul
+              %li
+                .title
+                  %span Столовая
+                .str
+                %a.fancybox-adv{:href => "img/ecos1.png", :title => "Столовая"}
+                  %img{:alt => "", :src => "img/ecos1_min.png"}
+              %li
+                .title
+                  %span Жилой модуль
+                .str
+                %a.fancybox-adv{:href => "img/ecos2.png", :title => "Жилой модуль"}
+                  %img{:alt => "", :src => "img/ecos2_min.png"}
+              %li
+                .title
+                  %span Комната отдыха
+                .str
+                %a.fancybox-adv{:href => "img/ecos3.png", :title => "Комната отдыха"}
+                  %img{:alt => "", :src => "img/ecos3_min.png"}
+              %li
+                .title
+                  %span Раздевалка
+                .str
+                %a.fancybox-adv{:href => "img/ecos4.png", :title => "Раздевалка"}
+                  %img{:alt => "", :src => "img/ecos4_min.png"}
+              %li
+                .title
+                  %span Штаб стройки
+                .str
+                %a.fancybox-adv{:href => "img/ecos5.png", :title => "Штаб стройки"}
+                  %img{:alt => "", :src => "img/ecos5_min.png"}
+          .clr
+      #clients
+        .m-w
+          %h2 Наша гордость - Благодарные клиенты
+          .list
+            %img{:alt => "", :src => "img/clients.jpg"}
+          .clr
+      #address
+        .m-w
+          %h2 есть вопросы? Звоните нам
+          .list
+            %ul
+              %li
+                %b Москва
+                %br/
+                %span
+                  ул. Водников, 2
+                  %br/
+                  +7 (925) 144-36-77
+              %li
+                %b Новосибирск
+                %br/
+                %span
+                  ул. Станционная, 60/9
+                  %br/
+                  +7 (383) 319-03-90
+              %li
+                %b Красноярск
+                %br/
+                %span
+                  ул. Маерчака, 101/4
+                  %br/
+                  +7 (391) 215-53-45
+              %li
+                %b Екатеринбург
+                %br/
+                %span
+                  ул. Завокзальная, 5
+                  %br/
+                  +7 (343) 328-56-18
+          .clr
+      #callback
+        .m-w
+          %h2 А если хотите - мы вам перезвоним
+          .form
+            %form.form-order
+              .row.f-l
+                %label{:for => "phone-f"} Ваш телефон:
+                %input#phone-f{:name => "phone", :placeholder => "+7 (___) ___-__-__", :type => "text"}
+              .row.f-l
+                %label{:for => "email"} Е-mail:
+                %input#email{:name => "email", :type => "text"}
+              .row.btn.f-r
+                %input.order-form{:onclick => "yaCounter25541372.reachGoal('down-bottom'); return true;", :type => "submit", :value => "Заказать"}
+          .clr
+    #footer
+      .m-w
+        .logo.f-l
+          %img{:alt => "", :src => "img/footer-logo.png"}
+        .description.f-l Модули ЭкоБокс - идеальное решение для организации рабочих и бытовых условий
+    / Yandex.Metrika counter
+    :javascript
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+              try {
+                  w.yaCounter25541372 = new Ya.Metrika({id:25541372,
+                          webvisor:true,
+                          clickmap:true,
+                          trackLinks:true,
+                          accurateTrackBounce:true});
+              } catch(e) { }
+          });
+      
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+      
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    %noscript
+      %div
+        %img{:alt => "", :src => "//mc.yandex.ru/watch/25541372", :style => "position:absolute; left:-9999px;"}/
+    / /Yandex.Metrika counter
