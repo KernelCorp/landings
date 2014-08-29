@@ -57,26 +57,26 @@
     .title
       | Какой ремонт вам нужен?
     #rtypes
-      .rtype.inl-bl.active
+      .rtype.inl-bl.active value='800'
         .title
           | Косметический ремонт
         .text
           | Обдирка стен, <br>
             Наклейка или покраска обоев, <br>
             Укладка напольного покрытия
-      .rtype.inl-bl.inactive
+      .rtype.inl-bl.inactive value='1500'
         .title
           | Капитальный <br>
             ремонт
         .text
           | Перепланировка <br>
             Выравнивание стен, установка дверей, окон, укладка напольного покрытия и замена коммуникаций
-      .rtype.inl-bl.inactive
+      .rtype.inl-bl.inactive value='1800'
         .title
           | «Евроремонт»
         .text
           | Обдирка и выравнива- ние стен, потолков, наклейка обоев или покраска, укладка напольного покрытия
-      .rtype.inl-bl.inactive
+      .rtype.inl-bl.inactive value='2500'
         .title
           | Дизайн проект
         .text
@@ -120,11 +120,11 @@
     #price-block
       #under-border
       #will-cost
-        | Косметический ремонт 60 м<span class='sup'>2</span> будет стоить:
+        | <span id='type-value'>Косметический ремонт</span> <span id='square-value'>60</span> м<span class='sup'>2</span> будет стоить:
       #price
-        | всего 49 043 рубля
+        | всего <span id='price-value'>49 043</span> рублей
       #average-price
-        | Для примера, средняя цена в Новосибирске – <span> &nbsp;71 000 рублей&nbsp; </span>
+        | Для примера, средняя цена в Новосибирске – <span> &nbsp;<span id='fake-price-value'>71 000</span> рублей&nbsp; </span>
 
 #form-block.fullwidth
   #bg-opacity
