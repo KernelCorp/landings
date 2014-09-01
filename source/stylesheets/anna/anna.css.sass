@@ -23,8 +23,9 @@ a
     border-bottom: 2px solid #fd6f2f
     color: #fd6f2f
     display: inline-block
-    font-size: 16px
-    padding: 39px 0 5px
+    font-size: 18px
+    padding: 34px 0 5px
+    margin-left: 5px
 
   div.search
     padding-top: 29px
@@ -37,7 +38,7 @@ a
       outline: none
       padding: 3px 10px 3px 32px
       vertical-align: top
-      width: 178px
+      width: 190px
     button.search
       background-color: transparent
       border: none
@@ -75,13 +76,17 @@ button.img, a.img
   img.anna_big
     margin-left: -68px
     margin-top: -19px
+    margin-bottom: -12px
 
   img.logo
     margin-top: 54px
 
   .info_block
-    margin-top: 10px
-    margin-left: 54px
+    margin-top: 35px
+    margin-left: 59px
+    font-size: 14px
+    line-height: 18px
+
 
     .slider
       margin-bottom: 20px
@@ -119,6 +124,7 @@ button.img, a.img
     font-weight: bold
     height: 79px
     padding-top: 30px
+    position: relative
 
     a
       color: #e94931
@@ -137,7 +143,7 @@ button.img, a.img
     padding-right: 20px
 
 .news_block
-  padding-top: 70px
+  padding-top: 65px
   text-align: left
 
   .block_d2
@@ -145,25 +151,35 @@ button.img, a.img
     vertical-align: top
     width: 480px
     + .block_d2
-      margin-left: 30px
+      margin-left: 25px
+      width: 480px + 30px
       .block
         padding-left: 30px
 
   .block
+    .group-header
+      padding-bottom: 23px
 
     .elem
       color: #8d889d
       font-size: 13px
-      height: 302px
+      height: 314px
       position: relative
       .description
         height: 92px
         padding-top: 20px
 
+      > img
+        width: 100%
+      a img
+        display: inline
+
   ul
     list-style: none
     padding: 0
     margin: 0
+
+
 
   .bx-wrapper
     margin-bottom: 0
@@ -173,6 +189,8 @@ button.img, a.img
     box-sizing: border-box
     padding-right: 50px
     text-align: right
+    width: auto
+    right: 0
 
 
   .bx-wrapper .bx-pager.bx-default-pager a
