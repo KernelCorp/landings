@@ -57,26 +57,26 @@
     .title
       | Какой ремонт вам нужен?
     #rtypes
-      .rtype.inl-bl.active value='800'
+      .rtype.inl-bl.active value='1000'
         .title
           | Косметический ремонт
         .text
           | Обдирка стен, <br>
             Наклейка или покраска обоев, <br>
             Укладка напольного покрытия
-      .rtype.inl-bl.inactive value='1500'
-        .title
-          | Капитальный <br>
-            ремонт
-        .text
-          | Перепланировка <br>
-            Выравнивание стен, установка дверей, окон, укладка напольного покрытия и замена коммуникаций
-      .rtype.inl-bl.inactive value='1800'
+      .rtype.inl-bl.inactive value='3000'
         .title
           | «Евроремонт»
         .text
           | Обдирка и выравнива- ние стен, потолков, наклейка обоев или покраска, укладка напольного покрытия
-      .rtype.inl-bl.inactive value='2500'
+      .rtype.inl-bl.inactive value='5000'
+        .title
+          | Капитальный <br>
+              ремонт
+        .text
+          | Перепланировка <br>
+              Выравнивание стен, установка дверей, окон, укладка напольного покрытия и замена коммуникаций
+      .rtype.inl-bl.inactive value='1200'
         .title
           | Дизайн проект
         .text
@@ -86,34 +86,34 @@
       .title
         | Какую площадь будем ремонтировать? (примерно)
       #small-room
-        | &nbsp;&nbsp;небольшая комната <br>
+        | <span id='room-type'>&nbsp;&nbsp;Квартира<span> <br>
         img src='images/remont/line.png'
       #scale
-        .tic.inl-bl
+        .tic style='left: 0'
           | 10 м<span class='sup'>2</span>
-        .tic.inl-bl
+        .tic style='left: 8.3%'
           | 20
-        .tic.inl-bl
+        .tic style='left: 16.6%'
           | 30
-        .tic.inl-bl
+        .tic style='left: 24.5%'
           | 50
-        .tic.inl-bl
+        .tic style='left: 32.5%'
           | 70
-        .tic.inl-bl
+        .tic style='left: 40.5%'
           | 90
-        .tic.inl-bl
+        .tic style='left: 48%'
           | 120
-        .tic.inl-bl
-          | 170
-        .tic.inl-bl
+        .tic style='left: 56.2%'
+          | 150
+        .tic style='left: 64.3%'
           | 200
-        .tic.inl-bl
+        .tic style='left: 72.4%'
           | 250
-        .tic.inl-bl
+        .tic style='left: 80.6%'
           | 300
-        .tic.inl-bl
+        .tic style='left: 88.8%'
           | 400
-        .tic.inl-bl
+        .tic style='left: 96%'
           | 500 м<span class='sup'>2</span>
       #slider-range-min
 
@@ -164,24 +164,68 @@
 #slider-block.fullwidth
   #want-this.container
     ul#want-this-slider
-      li: img src='images/remont/slider_1.jpg'
-      li: img src='images/remont/slider_1.jpg'
-      li: img src='images/remont/slider_1.jpg'
-    #slider-stripe
-      #feedback-container
-        .title
-          | Фотографии <br> и отзывы
-        #photo-info
-          | На фото: <br>
-            косметический ремонт
-        #feedback
-          | «Заказывали дизайнерский ремонт, расчитывали на 6000 р за метр квадратный,
-            но прораб посмотрел нашу новостройку, выслушал пожелания и сказал что ремонт
-            обойдется в 4500 за метр. А в итоге, получилось даже дешевле - 4390 р.»
-        #author
-          | — Олег и Наталья
-        button
-          | Хочу так же
+      li id='photo-redecorating': img src='images/remont/slider_1.jpg'
+        .slider-stripe
+          .feedback-container
+            .title
+              | Фотографии <br> и отзывы
+            .photo-info
+              | На фото: <br>
+                    косметический ремонт
+            .feedback
+              | «Заказывали дизайнерский ремонт, расчитывали на 6000 р за метр квадратный,
+                    но прораб посмотрел нашу новостройку, выслушал пожелания и сказал что ремонт
+                    обойдется в 4500 за метр. А в итоге, получилось даже дешевле - 4390 р.»
+            .author
+              | — Олег и Наталья
+            button
+              | Хочу так же
+      li id='photo-euro': img src='images/remont/slider_2.jpg'
+        .slider-stripe
+          .feedback-container
+            .title
+              | Фотографии <br> и отзывы
+            .photo-info
+              | На фото: <br>
+                евроремонт
+            .feedback
+              | «Заказывали дизайнерский ремонт, расчитывали на 6000 р за метр квадратный,
+                но прораб посмотрел нашу новостройку, выслушал пожелания и сказал что ремонт
+                обойдется в 4500 за метр. А в итоге, получилось даже дешевле - 4390 р.»
+            .author
+              | — Олег и Наталья
+            button
+              | Хочу так же
+      li id='photo-overhaul': img src='images/remont/slider_3.jpg'
+        .slider-stripe
+          .feedback-container
+            .title
+              | Фотографии <br> и отзывы
+            .photo-info
+              | На фото: <br>
+                капитальный ремонт
+            .feedback
+              | «Заказывали дизайнерский ремонт, расчитывали на 6000 р за метр квадратный,
+                но прораб посмотрел нашу новостройку, выслушал пожелания и сказал что ремонт
+                обойдется в 4500 за метр. А в итоге, получилось даже дешевле - 4390 р.»
+            .author
+              | — Олег и Наталья
+            button
+              | Хочу так же
+      li id='photo-design': img src='images/remont/slider_4.jpg'
+        .slider-stripe
+          .feedback-container
+            .title
+              | Фотографии <br> и отзывы
+            .photo-info
+              | На фото: <br>
+                дизайн проект
+            .feedback
+              | «Заказывали дизайнерский ремонт, расчитывали на 6000 р за метр квадратный,
+                но прораб посмотрел нашу новостройку, выслушал пожелания и сказал что ремонт
+                обойдется в 4500 за метр. А в итоге, получилось даже дешевле - 4390 р.»
+            .author
+              | — Олег и Наталья
 
 #who-to-come-block.fullwidth
   #who-to-come.container

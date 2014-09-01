@@ -203,21 +203,29 @@ body
         padding-top: 50px
         padding-bottom: 30px
       #small-room
+        position: absolute
         font-size: 18px
-        margin-left: 300px
         margin-bottom: 5px
+        span
+          margin-left: 10px
       #scale
+        position: absolute
         font-size: 0
         text-align: center
         width: 1080px
-        margin-left: -15px
-        margin-bottom: 15px
+        left: -15
+        margin-top: 35px
         .tic
+          position: absolute
           font-size: 16px
-          margin: auto
-          margin-right: 62px
+          &:first-child
+            width: 40px
+            margin-right: 47px
           &:last-child
             margin-right: 0
+            width: 50px
+      #slider-range-min
+        margin-top: 65px
 
     #price-block
       position: relative
@@ -242,7 +250,7 @@ body
       #price
         font-family: 'PT Sans Bold'
         font-size: 85px
-        margin: 10px 0 15px 0
+        margin: 10px 0 20px 0
       #average-price
         font-size: 24px
         span
@@ -336,14 +344,14 @@ body
     #want-this-slider
       height: 100%
       width: 100%
-  #slider-stripe
+  .slider-stripe
     position: absolute
     height: 100%
     width: 367px
     left: 100px
     top: 0px
     background-color: rgba(0, 0, 0, 0.33)
-    #feedback-container
+    .feedback-container
       position: relative
       height: 100%
       width: 265px
@@ -351,20 +359,20 @@ body
       color: #ffffff
       line-height: 1.2
       font-size: 24px
-      #photo-info
+      .photo-info
         height: 100px
-      #author
+      .author
         font-family: 'PT Sans Bold'
         text-align: right
         margin-top: 23px
-      button
-        position: absolute
-        left: -1px
-        bottom: 23px
-        height: 59px
-        width: 267px
-        background-image: url(../../images/remont/button_3.png)
-        font-size: 22px
+    button
+      position: absolute
+      left: -1px
+      bottom: 23px
+      height: 59px
+      width: 267px
+      background-image: url(../../images/remont/button_3.png)
+      font-size: 22px
 
 #who-to-come-block
   #who-to-come

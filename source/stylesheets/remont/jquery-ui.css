@@ -690,7 +690,7 @@ button.ui-button::-moz-focus-inner {
     height: .8em;
 }
 .ui-slider-horizontal .ui-slider-handle {
-    top: -14px;
+    top: -13px;
     margin-left: -59px;
 }
 .ui-slider-horizontal .ui-slider-range {
@@ -1224,6 +1224,8 @@ body .ui-tooltip {
 }
 
 .ui-widget-content {
+    border: none;
+    background: none;
     background-image: url(../../images/remont/scale.png);
     width: 1049px;
     height: 21px;
