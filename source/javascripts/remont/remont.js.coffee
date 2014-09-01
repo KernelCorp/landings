@@ -4,6 +4,7 @@ calc = ->
   square = scaling()
   $("#amount").val square
   $("#square-value").html(square)
+  $("#square-value-footer").html(square)
   price = coefficient * square
   $("#price-value").html(price)
   $("#fake-price-value").html(Math.round(price * 1.25))
@@ -71,6 +72,19 @@ $ ->
       calc()
       type_text = $(this).children('.title').first().text()
       $('#type-value').html(type_text)
+      if $(this).index() == 0
+        $('#type-value-footer').html('косметического ремонта')
+      if $(this).index() == 1
+        $('#type-value-footer').html('евроремонта')
+      if $(this).index() == 2
+        $('#type-value-footer').html('капитального ремонта')
+      if $(this).index() == 3
+        $('#type-value-footer').html('дизайнерского проекта')
       photo_slider.goToSlide($(this).index())
 
-  return
+  $('.slider-stripe').mousewheel (event, delta, deltaX, deltaY) ->
+    photo_slider.goToPrevSlide()  if delta > 0
+    photo_slider.goToNextSlide()  if deltaY < 0
+    event.stopPropagation()
+    event.preventDefault()
+    return

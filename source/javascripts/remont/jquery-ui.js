@@ -11539,6 +11539,9 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 		this._setOption( "disabled", this.options.disabled );
 
 		this._animateOff = false;
+
+        $('.ui-slider-handle').append("<input type='text' id='amount' readonly><span>&nbsp;м<span class='sup'>2</span></span>");
+
 	},
 
 	_refresh: function() {
