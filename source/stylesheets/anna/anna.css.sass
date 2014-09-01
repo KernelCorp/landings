@@ -15,7 +15,7 @@ a
     border-color: #eb4a36
 
 #header
-  background: #fcfdfd url("../../images/anna/header_background.jpg") 0 0 repeat-x
+  background: #fcfdfd
   border-bottom: 2px solid #d6d6d6
   height: 85px
 
@@ -70,7 +70,7 @@ button.img, a.img
   .center-block
     width: 390px
   .right-block
-    width: 356px
+    width: 366px
 
   img.anna_big
     margin-left: -68px
@@ -143,10 +143,14 @@ button.img, a.img
   .block_d2
     display: inline-block
     vertical-align: top
-    width: 49.5%
+    width: 480px
+    + .block_d2
+      margin-left: 30px
+      .block
+        padding-left: 30px
 
   .block
-    width: 444px
+
     .elem
       color: #8d889d
       font-size: 13px
@@ -215,7 +219,7 @@ button.img, a.img
       border-radius: 0
       color: #65686d
       margin-right: -1px
-      padding: 12px 50px
+      padding: 12px 47px
       &:hover
         background-color: #fff
 
@@ -249,15 +253,16 @@ button.img, a.img
     margin: 0 0 15px
 
   .left-block
+    box-sizing: border-box
     display: inline-block
-    margin-right: 10px
+    padding-right: 10px
     vertical-align: top
-    width: 745px
+    width: 75%
 
   .right-block
     display: inline-block
     vertical-align: top
-    width: 247px
+    width: 24.6%
 
     .form
 
@@ -335,7 +340,7 @@ button.img, a.img
     display: inline-block
     padding-right: 20px
     vertical-align: top
-    width: 24.5%
+    width: 24.7%
     &:last-child
       padding-right: 0
 
@@ -346,11 +351,11 @@ button.img, a.img
 
       input
         height: 32px
-        width: 230px
+        width: 100%
 
       textarea
         height: 109px
-        width: 230px
+        width: 100%
 
       .name::before,
       .email::before,
