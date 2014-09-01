@@ -15,3 +15,4 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 gem 'slim'
 gem 'sass'
+gem 'bootstrap-sass' # used in anna
