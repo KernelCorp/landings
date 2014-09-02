@@ -43,10 +43,10 @@
       #call-master-form
         .text
           | Вызовите мастера для расчета сметы <br>и <span> получите бесплатную консультацию </span>
-        form
+        form method="POST" id="form1" action="javascript:void(null);" onsubmit="form_submit('#form1')"
           #form-left.inl-bl
-            input name='name' type='text' placeholder='Представьтесь'
-            input name='phone' type='text' placeholder='Номер телефона'
+            input name='NAME' type='text' placeholder='Представьтесь'
+            input name='PHONE' type='text' placeholder='Номер телефона'
           #form-right.inl-bl
             | Мы перезвоним вам <br> в течение 26 секунд
             button type='submit'
@@ -131,9 +131,9 @@
   .form.container
     p
       | Оставьте заявку на замеры, чтобы зафиксировать стоимость ремонта
-    form
-      input name='name' type='text' placeholder='Константин Константинович'
-      input name='phone' type='text' placeholder='+7 909 022-03-78'
+    form method="POST" id="form2" action="javascript:void(null);" onsubmit="form_submit('#form2')"
+      input name='NAME' type='text' placeholder='Константин Константинович'
+      input name='PHONE' type='text' placeholder='+7 909 022-03-78'
       button type='submit'
         | Вызвать на замер
 #economy-block.fullwidth
@@ -281,9 +281,9 @@
       | Повзоните по телефону 286-39-14 или оставьте телефон в заявке ниже, <br>
         чтобы вызвать прораба на подтверждение оценки
     .form
-      form
-        input name='name' type='text' placeholder='Константин Константинович'
-        input name='phone' type='text' placeholder='+7 909 022-03-78'
+      form method="POST" id="form3" action="javascript:void(null);" onsubmit="form_submit('#form3')"
+        input name='NAME' type='text' placeholder='Константин Константинович'
+        input name='PHONE' type='text' placeholder='+7 909 022-03-78'
         button type='submit'
           | Вызвать на замер
     #contacts
