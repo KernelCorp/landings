@@ -7,6 +7,7 @@ html, body
   height: 100%
   margin: 0
   padding: 0
+  min-width: 462px
 
 body
   background-color: #f6f2f0
@@ -93,8 +94,7 @@ h1
       padding: 0
 
       li
-        display: inline-block
-        margin: 0
+        margin: 0 2px 0 0
         padding: 0
 
         a, a:hover, a:visited
@@ -136,6 +136,24 @@ div.container
   width: 100%
 
   .container
+
+    .menu.navbar-default
+      background-color: transparent
+      margin-bottom: 0
+      min-height: 0
+      border-color: transparent
+
+      .navbar-form
+        border-color: transparent
+        padding-bottom: 0
+        margin-bottom: 0
+        margin-top: 0
+        padding-top: 9px
+
+      .navbar-collapse
+        border-color: transparent
+        padding: 0
+
     .menu_d3
       display: inline-block
       vertical-align: top
@@ -183,12 +201,19 @@ div.container
     .container
       font-size: 12px
       .menu_d3
+        width: 49.5%
         .header
           font-size: 14px
         ul
           a,li
             line-height: 18px
             font-size: 12px
+
+@media (max-width: 768px)
+  body
+    padding-bottom: 560px
+  #footer
+    height: 540px
 
 .bx-wrapper
   margin-bottom: 40px
@@ -265,6 +290,7 @@ ul#main_slider, ul#main_slider li
     .title
       box-sizing: border-box
       font-size: 18px
+      line-height: normal
       height: 42px
       &.padding
         padding-top: 10px
@@ -279,10 +305,8 @@ ul#main_slider, ul#main_slider li
   font-size: 21px
   line-height: 29px
   .left_block
-    display: inline-block
     text-align: right
     vertical-align: top
-    width: 74%
 
     h1
       margin-bottom: 15px
@@ -304,9 +328,5 @@ ul#main_slider, ul#main_slider li
       margin-right: 30px
 
   .right_block
-    display: inline-block
     margin-top: 35px
-    margin-left: 1%
     text-align: right
-    vertical-align: top
-    width: 24%
