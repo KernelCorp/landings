@@ -41,49 +41,59 @@ html
       == yield
     #footer
       .container
-        .menu_d3
-          .header КАТАЛОГ
-          ul.menu
-            li: a href='#' GSM-сигнализации
-            li: a href='#' Автосигнализации с обратной связью
-            li: a href='#' Противоугонные системы
-            li: a href='#' Таймеры и запуски
-            li: a href='#' Поисковые устройства
-            li: a href='#' Интерфейсные модули CAN
-            li: a href='#' Дополнительное оборудование
-            li: a href='#' Системы охраны помещений
-            li: a href='#' Снятое с производства
-
-        .menu_d3
-          .header ПОЛЬЗОВАТЕЛЮ
-          ul.menu
-            li: a href='#' Инструкции и руководства
-            li: a href='#' Клуб SOBR
-            li: a href='#' Техподдержка
-            li: a href='#' Вопрос-Ответ
-            li: a href='#' Гарантия
-            li: a href='#' Приложения SOBR
-
-          a.devices href='#'
-            img src='images/sobr/footer-link-apple.png'
-          a.devices href='#'
-            img src='images/sobr/footer-link-android.png'
-          a.devices href='#'
-            img src='images/sobr/footer-link-windows.png'
+        nav.menu.navbar.navbar-default role='navigation'
+          .navbar-header
+            button.navbar-toggle.collapsed type='button' data-toggle='collapse' data-target='#footer-menu'
+              span.sr-only Меню
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
 
 
-        .menu_d3
-          .header SOBR-ASSISTANCE
-          ul.menu
-            li: a href='#' Тариф «Поиск»
-            li: a href='#' Тариф «Поиск+»
-            li: a href='#' Тариф «Базовый»
-            li: a href='#' Тариф «Базовый+Поиск»
+          .collapse.navbar-collapse#footer-menu
+            .menu_d3
+              .header КАТАЛОГ
+              ul.menu
+                li: a href='#' GSM-сигнализации
+                li: a href='#' Автосигнализации с обратной связью
+                li: a href='#' Противоугонные системы
+                li: a href='#' Таймеры и запуски
+                li: a href='#' Поисковые устройства
+                li: a href='#' Интерфейсные модули CAN
+                li: a href='#' Дополнительное оборудование
+                li: a href='#' Системы охраны помещений
+                li: a href='#' Снятое с производства
 
-          .header SOBR-ASSISTANCE
-          ul.menu
-            li: a href='#' Офисы SOBR
-            li: a href='#' Добавить компанию
+            .menu_d3
+              .header ПОЛЬЗОВАТЕЛЮ
+              ul.menu
+                li: a href='#' Инструкции и руководства
+                li: a href='#' Клуб SOBR
+                li: a href='#' Техподдержка
+                li: a href='#' Вопрос-Ответ
+                li: a href='#' Гарантия
+                li: a href='#' Приложения SOBR
+
+              a.devices href='#'
+                img src='images/sobr/footer-link-apple.png'
+              a.devices href='#'
+                img src='images/sobr/footer-link-android.png'
+              a.devices href='#'
+                img src='images/sobr/footer-link-windows.png'
+
+
+            .menu_d3
+              .header SOBR-ASSISTANCE
+              ul.menu
+                li: a href='#' Тариф «Поиск»
+                li: a href='#' Тариф «Поиск+»
+                li: a href='#' Тариф «Базовый»
+                li: a href='#' Тариф «Базовый+Поиск»
+
+              .header SOBR-ASSISTANCE
+              ul.menu
+                li: a href='#' Офисы SOBR
+                li: a href='#' Добавить компанию
 
         .copyright
           span &copy; 2006 - 2014 SOBR Системы охраны безопасности России
