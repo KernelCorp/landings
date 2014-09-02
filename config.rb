@@ -21,6 +21,7 @@ page '/anna.html', layout: :anna
 # page 'anna.html', layout: :anna
 
 page 'remont.html', layout: :remont
+page 'eco_slider.html', layout: :eco_slider
 
 # Per-page layout changes:
 #
