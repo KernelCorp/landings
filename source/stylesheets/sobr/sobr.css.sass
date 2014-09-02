@@ -136,6 +136,24 @@ div.container
   width: 100%
 
   .container
+
+    .menu.navbar-default
+      background-color: transparent
+      margin-bottom: 0
+      min-height: 0
+      border-color: transparent
+
+      .navbar-form
+        border-color: transparent
+        padding-bottom: 0
+        margin-bottom: 0
+        margin-top: 0
+        padding-top: 9px
+
+      .navbar-collapse
+        border-color: transparent
+        padding: 0
+
     .menu_d3
       display: inline-block
       vertical-align: top
@@ -183,12 +201,19 @@ div.container
     .container
       font-size: 12px
       .menu_d3
+        width: 49.5%
         .header
           font-size: 14px
         ul
           a,li
             line-height: 18px
             font-size: 12px
+
+@media (max-width: 768px)
+  body
+    padding-bottom: 560px
+  #footer
+    height: 540px
 
 .bx-wrapper
   margin-bottom: 40px
