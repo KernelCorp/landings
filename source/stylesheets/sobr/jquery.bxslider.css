@@ -15,7 +15,7 @@
 ===================================*/
 
 .bx-wrapper {
-	position: relative;
+    position: relative;
 	margin: 0 auto 60px;
 	padding: 0;
 	*zoom: 1;
@@ -30,9 +30,9 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	border:  none
+	border:  none;
 	left: 0;
-	background: transparent;
+	background: #fff;
 	
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
@@ -53,13 +53,13 @@
 
 .bx-wrapper .bx-loading {
 	min-height: 50px;
-	background: url(../images/bx_loader.gif) center center no-repeat #fff;
+	background: url(../../images/bx_loader.gif) center center no-repeat #fff;
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 3;
+	z-index: 2;
 }
 
 /* PAGER */
@@ -101,13 +101,13 @@
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-	left: 10px;
-	background: url(../images/controls.png) no-repeat 0 -32px;
+	left: 100px;
+	background: url(../images/sobr/controls.png) no-repeat 0 -32px;
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(../images/controls.png) no-repeat -43px -32px;
+	background: url(../images/sobr/controls.png) no-repeat -43px -32px;
 }
 
 .bx-wrapper .bx-prev:hover {
@@ -121,12 +121,11 @@
 .bx-wrapper .bx-controls-direction a {
 	position: absolute;
 	top: 50%;
-	margin-top: -16px;
 	outline: 0;
-	width: 32px;
-	height: 32px;
+	width: 44px;
+	height: 95px;
 	text-indent: -9999px;
-	z-index: 2;
+	z-index: 1;
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {
@@ -145,7 +144,7 @@
 	width: 10px;
 	height: 11px;
 	outline: 0;
-	background: url(../images/controls.png) -86px -11px no-repeat;
+	background: url(../images/sobr/controls.png) -86px -11px no-repeat;
 	margin: 0 3px;
 }
 
@@ -160,7 +159,7 @@
 	width: 9px;
 	height: 11px;
 	outline: 0;
-	background: url(../images/controls.png) -86px -44px no-repeat;
+	background: url(../images/sobr/controls.png) -86px -44px no-repeat;
 	margin: 0 3px;
 }
 

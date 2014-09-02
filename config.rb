@@ -16,7 +16,7 @@ set :slim, { :pretty => true, :format => :html5 }
 #page '/index.html', layout: :rack
 
 #PROJECTS
-#page '/sobr.html', layout: :sobr
+page '/sobr.html', layout: :sobr
 page '/anna.html', layout: :anna
 # page 'anna.html', layout: :anna
 

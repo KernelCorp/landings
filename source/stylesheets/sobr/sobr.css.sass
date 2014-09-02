@@ -1,5 +1,7 @@
+//= require "bootstrap"
 @import "../normalize"
-@import "../jquery.bxslider"
+@import "./jquery.bxslider"
+
 
 html, body
   height: 100%
@@ -34,13 +36,16 @@ h1
 #header
   background-color: #fff
   border-bottom: 1px solid #6e6e6f
-  height: 158px
+  line-height: normal
 
   img.logo
-    margin: 29px 0 33px 36px
+    max-width: 100%
+    margin: 29px 0 33px 0
   div.search
     float: right
     margin-top: 50px
+
+  form.search
 
     input.search
       background-color: #dcdbda
@@ -52,7 +57,8 @@ h1
       outline: none
       padding: 5px 45px 5px 15px
       vertical-align: top
-      width: 256px
+      max-width: 256px
+      width: 100%
 
     button.search
       background-color: #4a9eb5
@@ -65,7 +71,19 @@ h1
       vertical-align: top
       width: 32px
 
-  .menu
+  .menu.navbar-default
+    background-color: transparent
+    margin-bottom: 0
+    min-height: 0
+    border-color: transparent
+
+    .navbar-form
+      border-color: transparent
+      padding-bottom: 0
+
+    .navbar-collapse
+      border-color: transparent
+      padding: 0
     ul
       list-style: none
       margin: 0
@@ -80,7 +98,7 @@ h1
           border-color: transparent
           text-decoration: none
         a
-
+          border-bottom: 3px solid transparent
           border-radius: 3px
           color: #414042
           font-family: arial, sans-serif
@@ -89,7 +107,7 @@ h1
           font-weight: normal
           display: inline-block
           padding: 6px 14px 4px
-          margin: 0
+          margin: 0 0 2px
         a.active, a:hover
           background-color: #9f261e
           background: -o-linear-gradient(to bottom, #ce4027 0%, #851719 100%)
@@ -97,13 +115,13 @@ h1
           background: -moz-linear-gradient(to bottom, #ce4027 0%, #851719 100%)
           background: -webkit-linear-gradient(to bottom, #ce4027 0%, #851719 100%)
           background: linear-gradient(to bottom, #ce4027 0%, #851719 100%)
-          border-bottom: 3px solid #6d161c
+          border-bottom-color: #6d161c
           color: white
 
 
 div.container
   margin: 0 auto
-  width: 87%
+  //width: 87%
 
 #footer
   background: url(../../images/sobr/footer-background.jpg)
@@ -118,7 +136,7 @@ div.container
     .menu_d3
       display: inline-block
       vertical-align: top
-      width: 33%
+      width: 32.7%
       .header
         font-size: 23px
         font-weight: bold
@@ -148,6 +166,26 @@ div.container
       padding-bottom: 20px
       position: absolute
       bottom: 0
+  @media (max-width: 992px)
+    .container
+      font-size: 14px
+      .menu_d3
+        .header
+          font-size: 16px
+        ul
+          a,li
+            line-height: 18px
+            font-size: 16px
+  @media (max-width: 768px)
+    .container
+      font-size: 12px
+      .menu_d3
+        .header
+          font-size: 14px
+        ul
+          a,li
+            line-height: 18px
+            font-size: 12px
 
 .bx-wrapper
   margin-bottom: 40px
