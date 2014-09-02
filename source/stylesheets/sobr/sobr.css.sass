@@ -200,6 +200,11 @@ div.container
   @media (max-width: 768px)
     .container
       font-size: 12px
+      button.navbar-toggle .icon-bar
+        background-color: #aaa
+
+      .collapse.in
+        margin-bottom: 60px
       .menu_d3
         width: 49.5%
         .header
@@ -207,13 +212,14 @@ div.container
         ul
           a,li
             line-height: 18px
-            font-size: 12px
+            font-size: 14px
 
 @media (max-width: 768px)
   body
-    padding-bottom: 560px
+    padding-bottom: 80px
   #footer
-    height: 540px
+    height: auto
+    min-height: 60px
 
 .bx-wrapper
   margin-bottom: 40px

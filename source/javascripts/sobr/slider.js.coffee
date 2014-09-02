@@ -1,4 +1,4 @@
-$ ->
+$(document).ready ->
   $('ul#main_slider').bxSlider
     controls: true
     pager: true
