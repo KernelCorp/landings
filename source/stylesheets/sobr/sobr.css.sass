@@ -28,6 +28,8 @@ a
   text-decoration: none
   &:hover
     border-bottom: 1px solid #414042
+    color: #414042
+    text-decoration: none
 
 h1
   font-size: 29px
@@ -172,6 +174,8 @@ div.container
           border-bottom: 1px solid transparent
           color: #ffffff
           font-size: 20px
+          font-style: normal
+          font-weight: normal
           line-height: 29px
           text-decoration: none
           &:hover
@@ -299,6 +303,7 @@ ul#main_slider, ul#main_slider li
 
     .title
       box-sizing: border-box
+      color: #3d889e
       font-size: 18px
       line-height: normal
       height: 42px
@@ -306,6 +311,8 @@ ul#main_slider, ul#main_slider li
         padding-top: 10px
 
 .description
+  h1
+    font-weight: bold
   p
     font-size: 20px
     line-height: 29px
@@ -319,23 +326,29 @@ ul#main_slider, ul#main_slider li
     vertical-align: top
 
     h1
+      font-weight: bold
       margin-bottom: 15px
       text-align: left
 
     .news_elem
       margin-bottom: 26px
       text-align: left
-      .title
+      a.title
+        color: #3d889e
         font-style: italic
         font-weight: bold
+        &:hover
+          border-bottom-color: #3d889e
 
     a.all_news
-      color: #414042
+      color: #3d889e
       font-size: 21px
       display: inline-block
       font-style: italic
       font-weight: bold
       margin-right: 30px
+      &:hover
+        border-bottom-color: #3d889e
 
   .right_block
     margin-top: 35px
