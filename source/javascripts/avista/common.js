@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+    $('ul#feedback-slider').bxSlider({
+        controls: true,
+        pager: true,
+        pagerCustom: '#bx-pager'
+    });
+
 	$('.size_trigger').fancybox({
 		width: 400,
 		autoHeight: true,

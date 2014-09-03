@@ -487,3 +487,49 @@ input[type=text].error{
 	border: 1px solid #c6c6c6;
 	padding: 5px;
 }
+
+/*Slider styles*/
+#slider-container {
+    width: 890px;
+    margin: 60px auto 65px; }
+#slider-container #slider-title {
+    font-family: "Roboto Medium";
+    font-size: 65px;
+    text-transform: uppercase;
+    margin: 60px 0; }
+#slider-container #feedback-slider {
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    font-family: "Roboto Regular"; }
+#slider-container #feedback-slider .slide {
+    height: 306px;
+    width: 890px; }
+#slider-container #feedback-slider .slide .pic {
+    position: absolute;
+    height: 215px;
+    width: 284px;
+    right: 0;
+    top: 48px; }
+#slider-container #feedback-slider .slide .logo {
+    height: 65px; }
+#slider-container #feedback-slider .slide .logo img {
+    max-height: 75px; }
+#slider-container #feedback-slider .slide .text {
+    margin-top: 25px;
+    margin-left: 70px;
+    width: 500px;
+    font-size: 15px;
+    line-height: 24px; }
+#bx-pager {
+    font-size: 0;
+    text-align: center; }
+#bx-pager a {
+    display: inline-block;
+    height: 4px;
+    width: 38px;
+    margin: 0 2px;
+    background-color: rgba(0, 0, 0, 0.1); }
+#bx-pager .active {
+    background-color: rgba(0, 0, 0, 0.3); }
+

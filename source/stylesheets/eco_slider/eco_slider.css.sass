@@ -1,0 +1,54 @@
+@import "jquery.bxslider"
+@import "fonts"
+
+body
+  margin: 0
+
+#slider-container
+  width: 890px
+  margin: 20px auto
+  #slider-title
+    font-family: 'Roboto Medium'
+    font-size: 65px
+    text-transform: uppercase
+    margin: 60px 0
+  #feedback-slider
+    height: 100%
+    width: 100%
+    margin-top: 0
+    font-family: 'Roboto Regular'
+    .slide
+      height: 306px
+      width: 890px
+      .pic
+        position: absolute
+        height: 215px
+        width: 284px
+        right: 0
+        top: 48px
+      .logo
+        height: 65px
+        img
+          max-height: 75px
+      .text
+        margin-top: 25px
+        margin-left: 70px
+        width: 500px
+        font-size: 15px
+        line-height: 24px
+
+#bx-pager
+  font-size: 0
+  text-align: center
+  a
+    display: inline-block
+    height: 4px
+    width: 38px
+    margin: 0 2px
+    background-color: rgba(0, 0, 0, 0.1)
+  .active
+    background-color: rgba(0, 0, 0, 0.3)
+
+
+
+
