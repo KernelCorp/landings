@@ -18,10 +18,9 @@ set :slim, { :pretty => true, :format => :html5 }
 #PROJECTS
 page '/sobr.html', layout: :sobr
 page '/anna.html', layout: :anna
-# page 'anna.html', layout: :anna
-
 page 'remont.html', layout: :remont
 page 'eco_slider.html', layout: :eco_slider
+page 'a_module.html', layout: :a_module
 
 # Per-page layout changes:
 #

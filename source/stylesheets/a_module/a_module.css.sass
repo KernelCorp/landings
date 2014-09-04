@@ -1,0 +1,514 @@
+@import "fonts"
+@import "jquery-ui"
+@import "jquery.bxslider"
+
+body
+  margin: 0
+
+.container
+  position: relative
+  width: 980px
+  height: 100%
+  margin: 0 auto
+.inl-bl
+  display: inline-block
+  vertical-align: top
+.red-text
+  font-family: 'MetaBoldC Regular'
+  color: #ff1c4e
+.with-gradient
+  //-------Gradient css--------
+  background: rgb(186,0,118) /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(186,0,118,1) 0%, rgba(103,30,124,1) 100%) /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(186,0,118,1)), color-stop(100%,rgba(103,30,124,1))) /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(186,0,118,1) 0%,rgba(103,30,124,1) 100%) /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(186,0,118,1) 0%,rgba(103,30,124,1) 100%) /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(186,0,118,1) 0%,rgba(103,30,124,1) 100%) /* IE10+ */
+  background: linear-gradient(to right, rgba(186,0,118,1) 0%,rgba(103,30,124,1) 100%) /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba0076', endColorstr='#671e7c',GradientType=1 ) /* IE6-9 */
+  //---------------------------
+
+#header
+  width: 100%
+  height: 178px
+  color: #ffffff
+  #header-container
+    font-size: 0
+    #header-freecall
+      margin-left: 15px
+      margin-top: 25px
+      line-height: 24px
+      span:first-child
+        vertical-align: top
+        font:
+          family: 'MetaBoldC Italic'
+          size: 14px
+        text-transform: uppercase
+        letter-spacing: 2px
+      img
+        padding: 0 10px
+      span:last-child
+        font:
+          family: 'MetaBoldC Regular'
+          size: 24px
+    #header-contacts
+      margin-left: 55px
+      margin-top: 30px
+      text-align: right
+      font:
+        family: 'MetaBoldC Regular'
+        size: 14px
+      letter-spacing: 2px  
+      a
+        display: inline-block
+        text-decoration: none
+        letter-spacing: 0px
+        color: #ffffff
+        cursor: pointer
+        border-bottom: 1px solid #ffffff
+        &:first-child
+          margin-left: 10px
+        &:last-child
+          margin-left: 13px
+    #header-buttons
+      position: absolute
+      right: 0
+      top: 19px
+      a
+        display: block
+        height: 34px
+        width: 148px
+        border: 3px solid #ffffff
+        text-transform: uppercase
+        margin-bottom: 8px
+        text-align: center
+        color: #ffffff
+        text-decoration: none
+        span
+          font-family: 'MetaBlackCapsC'
+          font-size: 11.3px
+          line-height: 36px
+    #logo
+      position: absolute
+      left: -9px
+      bottom: -35px
+    #menu
+      position: absolute
+      width: 900px
+      height: 49px
+      bottom: 0
+      right: 0
+      border-top: 1px solid #ffffff
+      font-size: 0px
+      text-align: right
+      .item
+        padding-left: 32px
+        a
+          color: #ffffff
+          text-decoration: none
+          font-family: 'MetaBookC Regular'
+          font-size: 14px
+          line-height: 49px
+          text-transform: uppercase
+          letter-spacing: 1px
+          cursor: pointer
+          &:hover
+            text-decoration: underline
+
+#bg_photo
+  width: 100%
+  min-height: 386px
+  overflow: hidden
+  img
+    width: 100%
+    height: auto
+    min-width: 1600px
+    min-height: 386px
+
+#rent
+  background: #ffffff
+  margin-top: -220px
+  height: auto
+  font-size: 0
+  #rent-left
+    margin: 68px 32px 0 31px
+    a
+      display: block
+      height: 42px
+      width: 183px
+      text-transform: uppercase
+      margin-bottom: 8px
+      text-align: center
+      text-decoration: none
+      cursor: pointer
+      &:nth-child(1)
+        color: #e530ae
+        border: 3px solid #e530ae
+      &:nth-child(2)
+        color: #b1077d
+        border: 3px solid #b1077d
+      &:nth-child(3)
+        color: #8a1176
+        border: 3px solid #8a1176
+      &:nth-child(4)
+        color: #671e7c
+        border: 3px solid #671e7c
+      span
+        font-family: 'MetaBlackCapsC'
+        font-size: 14px
+        line-height: 44px
+
+  #rent-right
+    margin-top: 68px
+    border-left: 1px solid #000000
+    min-height: 220px
+    .active
+      display: block
+    .inactive
+      display: none
+    .accordion-item
+      padding-left: 35px
+      .title
+        font-family: 'MetaBlackCapsC'
+        font-size: 48px
+        text-transform: uppercase
+        letter-spacing: 3px
+      .text
+        width: 575px
+        margin-top: 20px
+        font-family: 'MetaBookC Regular'
+        font-size: 18px
+        line-height: 30px
+
+#main-block
+  font-size: 0
+  margin-top: 90px
+  height: auto
+  .link
+    display: inline-block
+    color: #262626
+    font-size: 18px
+    margin-bottom: 15px
+    font-family: 'MetaMediumC'
+  #news
+    width: 222px
+    font-family: 'MetaMediumC'
+    #news-divider
+      width: 100%
+      height: 4px
+      background-color: #671f7c
+    #news-block
+      border: 1px solid #e1e4e7
+      .news
+        margin: 15px 0 15px 15px
+        .pic
+          width: 190px
+          height: 120px
+        .title
+          a
+            cursor: pointer
+            font-size: 16px
+            color: #333333
+            padding-top: 4px
+            line-height: 22px
+            text-decoration: none
+            &:hover
+              text-decoration: underline
+        .date
+          font-family: 'Lato Regular'
+          font-size: 12px
+          color: #999999
+          padding-bottom: 10px
+        .text
+          font-family: 'Lato Regular'
+          font-size: 13px
+          color: #9aa7af
+          color: #9aa7af
+
+  #content
+    margin-left: 31px
+    #content-menu
+      font-size: 18px
+      a:first-child
+        color: #671f7c
+        padding-right: 30px
+      a:nth-child(2)
+        padding-right: 40px
+      >span
+        padding-right: 20px
+      #slider-range
+        width: 220px
+        vertical-align: middle
+        margin-right: 10px
+      input
+        width: 70px
+        border: 0
+        margin: 0 30px 0 0
+        font-size: 13px
+        font-family: 'Lato Regular'
+        color: #99abb7
+      .pagination
+        display: inline-block
+        height: 20px
+        width: 20px
+        margin-left: 5px
+      #prev.inactive
+        background-image: url(../../images/a_module/prev_inactive.png)
+      #prev.active
+        background-image: url(../../images/a_module/prev_active.png)
+      #next.inactive
+        background-image: url(../../images/a_module/next_inactive.png)
+      #next.active
+        background-image: url(../../images/a_module/next_active.png)
+
+    #content-block
+      width: 725px
+      margin-top: -3px
+      .content-item
+        position: relative
+        width: 100%
+        height: 222px
+        font-size: 0
+        margin-bottom: 24px
+        .img
+          height: 220px
+          width: 220px
+          border: 1px solid #c0ccd3
+          img
+            height: 220px
+            width: 220px
+        .right
+          height: 220px
+          width: 500px
+          border: 1px solid #c0ccd3
+          margin-left: -1px
+          .title
+            height: 56px
+            width: 100%
+            font-family: 'MetaBoldC Regular'
+            border-bottom: 1px solid #c0ccd3
+            span
+              line-height: 56px
+              font-size: 19px
+              padding-left: 20px
+          .text
+            height: 100px
+            width: 455px
+            font-family: 'MetaNormalC'
+            font-size: 13px
+            line-height: 20px
+            color: #9aa7af
+            padding: 24px 22px 0 22px
+
+        .know-more
+          position: absolute
+          bottom: 0
+          right: 2px
+          height: 65px
+          width: 501px
+          background-color: #f0f0f0
+          font-family: 'MetaBoldC Regular'
+          font-size: 19px
+          line-height: 65px
+          .more
+            padding: 0 25px
+            a
+              color: #848484
+              cursor: pointer
+              text-decoration: underline
+          .price
+            color: #262626
+            padding-left: 15px
+            padding-right: 35px
+          .order-button
+            display: inline-block
+            height: 38px
+            width: 148px
+            margin-top: 14px
+            line-height: 38px
+            text-align: center
+            color: #ffffff
+            text-transform: uppercase
+            letter-spacing: 2px
+            cursor: pointer !important
+
+      #load-more
+        display: block
+        background: #701c78
+        width: 100%
+        height: 40px
+        line-height: 40px
+        text-transform: uppercase
+        color: #ffffff
+        letter-spacing: 3px
+        text-align: center
+        cursor: pointer
+        font-size: 19px
+        font-family: 'MetaBoldC Regular'
+
+#feedback
+  margin-top: 65px
+  height: auto
+  .title
+    padding-bottom: 40px
+    text-transform: uppercase
+    font-size: 36px
+    color: #262626
+    font-family: 'MetaBoldC Regular'
+    text-align: center
+    letter-spacing: 3px
+  #feedback-slider
+    width: 100%
+    margin-top: 0
+    .slide
+      height: 160px
+      width: 970px
+      background-color: #f6f6f6
+      border: 1px solid #e4ebed
+      border-left: none
+      border-right: none
+      box-sizing: border-box
+      font-size: 0
+      .vertical-line
+        height: 160px
+        width: 5px
+        background-color: #681f78
+        margin-top: -1px
+      .avatar
+        height: 100px
+        width: 100px
+        padding: 12px 18px 0 15px
+        img
+          height: 100px
+          width: 100px
+      .content
+        width: 500px
+        height: 100%
+        .name
+          font-family: 'Lato Regular'
+          font-size: 16px
+          color: #701c78
+          line-height: 22px
+          padding-top: 15px
+        .company
+          font-family: 'Lato Regular'
+          font-size: 13px
+          color: #9aa7af
+          line-height: 22px
+          padding-bottom: 10px
+          border-bottom: 1px solid #e3e3e3
+        .text
+          font-family: 'Lato Italic'
+          font-size: 13px
+          color: #9aa7af
+          line-height: 20px
+          padding-top: 10px
+      .img
+        height: 115px
+        width: 297px
+        padding: 20px 18px 0 15px
+        img
+          height: 115px
+          width: 297px
+
+#footer
+  height: 260px
+  width: 100%
+  background-color: #2f383d
+  color: #ffffff
+  position: relative
+  #footer-container.container
+    font-size: 0
+    #footer-logo
+      position: absolute
+      top: 60px
+      left: 0
+    #footer-top
+      margin-left: 138px
+      margin-right: 0px
+      height: 200px
+      #footer-freecall
+        margin-left: 15px
+        margin-top: 45px
+        line-height: 24px
+        span:first-child
+          vertical-align: top
+          font:
+            family: 'MetaBoldC Italic'
+            size: 14px
+          text-transform: uppercase
+          letter-spacing: 2px
+        img
+          padding: 0 10px
+        span:last-child
+          font:
+            family: 'MetaBoldC Regular'
+            size: 24px
+      #footer-contacts
+        margin-left: 80px
+        margin-top: 50px
+        text-align: right
+        font:
+          family: 'MetaBoldC Regular'
+          size: 14px
+        letter-spacing: 2px
+        a
+          display: inline-block
+          text-decoration: none
+          letter-spacing: 0px
+          color: #ffffff
+          cursor: pointer
+          border-bottom: 1px solid #ffffff
+          &:first-child
+            margin-left: 10px
+          &:last-child
+            margin-left: 13px
+      #footer-menu
+        width: 100%
+        height: 48px
+        font-size: 0
+        border-top: 1px solid #ffffff
+        border-bottom: 1px solid #ffffff
+        margin-top: 32px
+        .item
+          padding-left: 32px
+          &:first-child
+            padding-left: 0
+          a
+            color: #ffffff
+            text-decoration: none
+            font-family: 'MetaBookC Regular'
+            font-size: 14px
+            line-height: 48px
+            text-transform: uppercase
+            letter-spacing: 1px
+            cursor: pointer
+            &:hover
+              text-decoration: underline
+  #footer-bottom
+    position: absolute
+    height: 60px
+    width: 100%
+    bottom: 0
+    background-color: #202629
+    #footer-bottom-container
+      font-family: 'MetaBookC Regular'
+      font-size: 14px
+      color: #ffffff
+      line-height: 60px
+      a
+        color: #ffffff
+      .left
+        float: left
+      .right
+        float: right
+
+
+
+
+
+
+
+
+
+
