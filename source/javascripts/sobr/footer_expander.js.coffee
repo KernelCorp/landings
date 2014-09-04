@@ -1,7 +1,12 @@
 $(document).ready ->
   old_v = 0
   resize = ->
-    $(document.body).css('paddingBottom', $('#footer').height() + 20 + 'px')
+    height = $('#footer').height()
+    if height > old_v
+      $(document.body).addClass('expand')
+    else
+      $(document.body).removeClass('expand')
+    old_v = height
     $(document).scrollTop($("body").height())
     return
 
