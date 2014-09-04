@@ -1,31 +1,61 @@
+//= require "bootstrap"
 @import "../rack"
 @import "../../fonts/pt-sans/pt-sans"
 @import "../jquery.bxslider"
-@import "bootstrap/variables"
-@import "bootstrap/mixins/"
-@import "bootstrap/navs"
+
+
+
 
 body
   font-family: 'PT sans'
   padding-bottom: 456px
+  line-height: normal
 
 a
   color: #eb4a36
+  line-height: normal
   &:hover
     border-color: #eb4a36
+    color: #eb4a36
+    text-decoration: none
 
 #header
   background: #fcfdfd
   border-bottom: 2px solid #d6d6d6
   height: 85px
 
-  .anna_name
-    border-bottom: 2px solid #fd6f2f
-    color: #fd6f2f
+  ul.menu
     display: inline-block
-    font-size: 18px
-    padding: 34px 0 5px
-    margin-left: 5px
+    padding: 32px 0 0 5px
+    position: relative
+    list-style: none
+    margin: 0
+    width: 800px
+    li
+      float:  left
+      position: relative
+      a
+        border-bottom: 2px solid transparent
+        color: #eb4a36
+        display: inline-block
+        font-size: 18px
+        margin: 0 10px
+        padding-bottom: 2px
+        &:hover
+          border-bottom: 2px solid #eb4a36
+          color: #eb4a36
+      &:hover > ul.submenu
+        display: block
+      ul.submenu
+        background-color: #fcfdfd
+        display: none
+        position: absolute
+        min-width: 100%
+
+        li
+          float: none
+          display: block
+
 
   div.search
     padding-top: 29px
@@ -51,7 +81,8 @@ a
       width: 32px
 
 div.container
-  width: 1020px
+  padding: 0
+  width: 1020px!important
 
 button.img, a.img
   background: transparent
@@ -71,7 +102,7 @@ button.img, a.img
   .center-block
     width: 390px
   .right-block
-    width: 366px
+    width: 365px
 
   img.anna_big
     margin-left: -68px
@@ -166,6 +197,7 @@ button.img, a.img
       height: 314px
       position: relative
       .description
+        box-sizing: content-box
         height: 92px
         padding-top: 20px
 
@@ -280,7 +312,7 @@ button.img, a.img
   .right-block
     display: inline-block
     vertical-align: top
-    width: 24.6%
+    width: 24.5%
 
     .form
 
@@ -358,7 +390,7 @@ button.img, a.img
     display: inline-block
     padding-right: 20px
     vertical-align: top
-    width: 24.7%
+    width: 24.68%
     &:last-child
       padding-right: 0
 
