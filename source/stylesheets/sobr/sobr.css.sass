@@ -1,8 +1,9 @@
 //= require "bootstrap"
 @import "../normalize"
 @import "./jquery.bxslider"
-
-
+@media (max-width: 768px)
+  .feature
+    width: 159px
 html, body
   height: 100%
   margin: 0
@@ -257,8 +258,6 @@ div.container
   right: 0
   &:hover
     background-position: -76px -153px
-
-@media (max-width: 768px)
   .bx-wrapper .bx-controls-direction a
     background-size: 210%
     height: 41px
@@ -292,8 +291,6 @@ div.container
     background: -webkit-linear-gradient(top, #cf432a 0%, #891a1a 100%)
 
 
-
-
 ul#main_slider, ul#main_slider li
   list-style: none
   padding: 0
@@ -319,8 +316,6 @@ ul#main_slider, ul#main_slider li
     margin: 0 auto
     text-align: center
     vertical-align: top
-    width: 175px
-
     &:hover
       border-bottom-color: transparent
       img
