@@ -7,18 +7,18 @@ class PopupController
     return
 
   show_popup: ->
-    $('#popup-background').show('slow')
-    $('#popup-container').show('slow')
+    $('#popup-background').fadeIn(500)
+    $('#popup-container').fadeIn(500)
     if $(this).hasClass('order-call')
-      $('#popup-call').show('slow')
+      $('#popup-call').fadeIn(500)
     if $(this).hasClass('order-request')
-      $('#popup-request').show('slow')
+      $('#popup-request').fadeIn(500)
     return
   hide_popup: ->
-    $('#popup-background').hide('slow')
-    $('#popup-container').hide('slow')
-    $('#popup-call').hide('slow')
-    $('#popup-request').hide('slow')
+    $('#popup-background').fadeOut(500)
+    $('#popup-container').fadeOut(500)
+    $('#popup-call').fadeOut(500)
+    $('#popup-request').fadeOut(500)
 
 $ ->
   #Init popups
@@ -26,10 +26,10 @@ $ ->
   #Popup fix
   $('#popup-container').click (event) ->
     return if event.target isnt this
-    $('#popup-background').hide('slow')
-    $('#popup-container').hide('slow')
-    $('#popup-call').hide('slow')
-    $('#popup-request').hide('slow')
+    $('#popup-background').fadeOut(500)
+    $('#popup-container').fadeOut(500)
+    $('#popup-call').fadeOut(500)
+    $('#popup-request').fadeOut(500)
 
   #Init price range
   $("#slider-range").slider
