@@ -6,9 +6,9 @@
       | НОВОСИБИРСК <a href='tel:+73833190008'>+7 (383) 319-00-08</a><br><br>
         МОСКВА <a href='tel:+74997043407'>+7 (499) 704-34-07</a>
     #header-buttons
-      a href='#'
+      a.order-call.button-type-2
         | <span>Заказать заявку</span>
-      a href='#'
+      a.order-request.button-type-2
         | <span>Заказать звонок</span>
     #menu
       .item.inl-bl
@@ -34,13 +34,13 @@
 
 #rent.container
   #rent-left.inl-bl
-    a.active-link
+    a.active-link.button-type-2
       | <span>Лайфбоксы</span>
-    a.inactive-link
+    a.inactive-link.button-type-2
       | <span>Аренда бытовок</span>
-    a.inactive-link
+    a.inactive-link.button-type-2
       | <span>Сендвич панели</span>
-    a.inactive-link
+    a.inactive-link.button-type-2
       | <span>Вахтовые поселки</span>
   #rent-right.inl-bl
     .accordion-item.active id='0'
@@ -117,7 +117,7 @@
           .more.inl-bl
             a href='' Подробнее
           .price.inl-bl От 129 000 руб.
-          a.order-button.inl-bl.with-gradient Заказать
+          button.with-gradient.button-type.order-request Заказать
       .content-item
         .img.inl-bl
           img src='images/a_module/item_2.jpg'
@@ -132,7 +132,7 @@
           .more.inl-bl
             a href='' Подробнее
           .price.inl-bl От 139 000 руб.
-          a.order-button.inl-bl.with-gradient Заказать
+          button.with-gradient.button-type.order-request Заказать
       .content-item
         .img.inl-bl
           img src='images/a_module/item_3.jpg'
@@ -147,7 +147,7 @@
           .more.inl-bl
             a href='' Подробнее
           .price.inl-bl От 149 000 руб.
-          a.order-button.inl-bl.with-gradient Заказать
+          button.with-gradient.button-type.order-request Заказать
       .content-item
         .img.inl-bl
           img src='images/a_module/item_4.jpg'
@@ -162,8 +162,8 @@
           .more.inl-bl
             a href='' Подробнее
           .price.inl-bl От 159 000 руб.
-          a.order-button.inl-bl.with-gradient Заказать
-      a#load-more Посмотреть еще
+          button.with-gradient.button-type.order-request Заказать
+      button.button-type#load-more Посмотреть еще
 
 #feedback.container
   .title Отзывы наших клиентов
@@ -226,6 +226,31 @@
         | 2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ООО «А-модуль»&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='#'>Карта Сайта</a>
       .right
         | <a href='#' target='_blank'>Сделано в студии Либерти</a>
+
+#popup-background
+#popup-container
+  #popup-call.popup
+    .title Заказать звонок
+    form method="POST" id="form-call"
+      input.input name='NAME' type='text' placeholder='Имя'
+      input.input name='PHONE' type='text' placeholder='Телефон'
+      button.button-type.with-gradient type='submit'
+        | Заказать
+    a.close-button
+
+  #popup-request.popup
+    .title Оформить заявку
+    .text
+      | Оставьте заявку на нашем сайте, <br> и мы свяжемся с вами в ближайшее время.
+    form method="POST" id="form-request"
+      input.input name='NAME' type='text' placeholder='Имя'
+      input.input name='PHONE' type='text' placeholder='Телефон'
+      textarea.input name='INFO' placeholder='Что необходимо'
+      button.button-type.with-gradient type='submit'
+        | Заказать
+    a.close-button
+
+
 
 
 
