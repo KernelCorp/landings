@@ -3,9 +3,10 @@
 ###
 
 # Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+compass_config do |config|
+  #config.output_style = :compressed
+  config.line_comments = false
+end
 # Set template languages
 set :slim, :layout_engine => :slim
 set :slim, { :pretty => true, :format => :html5 }
